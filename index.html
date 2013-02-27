@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="description" content="Cecilia Reyes - Columbia University student. About me, projects, interest and wok portfolio" />
+<link href='http://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+<link href="css/lightbox.css" rel="stylesheet" />
+
+<style>
+
+	body {
+		background-color: #E6E6FA;
+	}
+	#pageWrapper{
+		font: bold 1.2em/2em 'Princess Sofia', Helvetica, sans-serif;
+		width: 1000px;
+		height: 620px;
+		margin-left: auto;
+		margin-right: auto;
+	} 
+	#footer{
+		position: relative;
+		background-color: #9370DB;
+		width: 1000px;
+		height: 200px;
+		top: -447px;
+		opacity: 0.8;
+	}
+	#contactme{
+		position: absolute;
+		right: 20px;
+	}
+	#email:hover{
+		opacity: 1.0;
+	}
+	#email{
+		position: relative;
+		right: -70px;
+		bottom: -60px;
+		opacity: 0.9;
+	}
+	#twitter_icon{
+		display: block;
+		height: 51px;
+		width: 49px;
+		background: url(images/twitter_icon.png) bottom;
+		position: relative;
+		left: 200px;
+	}
+	#twitter_icon:hover{
+		background-position: 0 0;
+	}
+	#linkedin_icon{
+		display: block;
+		height: 47.5px;
+		width: 48px;
+		background: url(images/linkedin_icon.png) bottom;
+		position: relative;
+		left: 258px;
+		bottom: 50px;
+	}
+	#linkedin_icon:hover{
+		background-position: 0 0;
+	}
+	#fb_icon{
+		display: block;
+		height: 49px;
+		width: 46px;
+		background: url(images/fb_icon.png) bottom;
+		position: relative;
+		left: 315px;
+		bottom: 98px;
+	}
+	#fb_icon:hover{
+		background-position: 0 0;
+	}
+	#resume{
+		position: relative;
+		left: 780px;
+		bottom: 180px;
+	}
+	#face{
+		border: 0px;	
+		position: relative;		
+	}
+	#mainFace{
+		position: relative;
+		left: 732px;
+		bottom: 430px;
+		z-index: 2;		
+		}
+	
+	#workFace{
+		position: relative;
+		left: 372px;
+		bottom: 430px;
+		z-index: 0;
+		visibility: hidden;
+	}	
+	#funFace{
+		position: relative;
+		left: 372px;
+		bottom: 430px;
+		z-index: 0;
+		visibility: hidden;
+	}		
+	#logo{
+		position: relative;
+		left: 20px;
+		top: 10px;
+		padding: 0px;
+		margin:0px;
+		}
+	#navbar{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		font-size: 230%;
+		width: 300px;
+		}	
+	#navbar li{
+		padding: 9px;
+		width: 174px;
+		color: #8A2BE2;
+	}	
+	#one{
+		position: relative;
+		left: 145px;
+		bottom: 70px;
+	}
+	#two{
+		position: relative;
+		left: 80px;
+		bottom:47px;
+	}
+	#three{
+		position: relative;
+		left: 180px;
+		bottom: 35px;
+	}
+	#underLogo{
+		position: relative;
+		width: 500px;
+		left: 320px ;
+		top: -85px;		
+	}
+	a{
+		text-decoration: none;
+	}
+
+	</style> 
+
+<title>Cecilia Reyes</title>
+
+</head>
+
+<body>
+	<div id="pageWrapper">
+		<div id="header">
+		
+		<a href="index.html">
+			<img src="images/logo.png" alt="Cecilia Reyes" width="830px" height="397px" id="logo" />
+			</a> 
+		<h1 id="websiteTitle?"></h1>
+		<p id="underLogo">at the crossroads of computer science and journalism</p>
+	
+					<ul id="navbar">
+					<a href="About/timeline/aboutme.html" target="_self" tabindex="1">
+						<li id="one" onmouseover="this.style.color='#ff69b4'" onmouseout="this.style.color='#8A2BE2'" >About me</li> 
+					</a>
+					<a href="Portfolio/portfolio.html" target="_self" tabindex="2">
+						<li id="two" onmouseover="this.style.color='#ff69b4'; makeVisible('workFace');" onmouseout="this.style.color='#8A2BE2'; noVisible('workFace');" >My work </li>
+					</a>
+					<a href="fun.html" target="_self" tabindex="3">
+						<li id="three" onmouseover="this.style.color='#ff69b4'; makeVisible('funFace');" onmouseout="this.style.color='#8A2BE2'; noVisible('funFace');" >Fun</li>
+					</a>
+				</ul>
+				
+			<div id="face">
+				<img id="mainFace" src="images/Main1.png" alt="my Face"  width="270px" height="405px"/>
+				<img id="workFace" src="images/Work1.png" style.visibility="hidden" alt="my work Face" width="357px" height="372px"/>
+			    <img id="funFace" src="images/Fun.png" alt="my fun Face" width="350px" height="412.5px" />
+			<div id="footer">
+				<img id="contactme" src="images/contactme.png" alt="My Contact info" />
+				<a href="mailto:kcr2118@columbia.edu?Subject=O%20Hai"><img id="email" src="images/email_icon.png" alt="Email Me" /></a>
+				<a id="twitter_icon" href="https://twitter.com/kcecireyes"></a> 
+				<a id="linkedin_icon" href="http://www.linkedin.com/in/kceciliareyes/"></a> 
+				<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a> 
+				<img id="resume" src="images/resume.png" alt="My Resume" />
+				
+				
+			</div> <!--End of footer -->
+			</div><!--End of face-->
+		</div> <!--End of header -->
+	
+	</div> <!--End of pageWrapper -->
+	
+	  <a href="images/image-1.jpg" rel="lightbox" title="drawing #1"></a>
+	
+
+<script language="javascript" type="text/javascript">
+	
+	function makeVisible(idName) {
+		document.getElementById(idName).style.visibility="visible";
+		document.getElementById("mainFace").style.visibility="hidden";
+		return true;
+	}
+	
+	function noVisible(idName) {
+		document.getElementById("mainFace").style.visibility="visible";
+		document.getElementById(idName).style.visibility="hidden";
+		return true;
+	}
+
+	
+</script>
+<noscript>
+	<h3>This site requires JavaScript</h3>
+ </noscript>
+
+ </body>
+</html>
