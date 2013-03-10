@@ -8,70 +8,8 @@
 * Designed and built with all the love in the world @twitter by @mdo and @fat.
 */
 
-#footer{
-	position: relative;
-	background-color: #9370DB;
-	width: 1000px;
-	height: 200px;
-	top: -447px;
-	opacity: 0.8;
-}
-#contactme{
-	position: absolute;
-	right: 20px;
-}
-#email:hover{
-	opacity: 1.0;
-}
-#email{
-	position: relative;
-	right: -70px;
-	bottom: -60px;
-	opacity: 0.9;
-}
-#twitter_icon{
-	display: block;
-	height: 51px;
-	width: 49px;
-	background: url(images/twitter_icon.png) bottom;
-	position: relative;
-	left: 200px;
-}
-#twitter_icon:hover{
-	background-position: 0 0;
-}
-#linkedin_icon{
-	display: block;
-	height: 47.5px;
-	width: 48px;
-	background: url(images/linkedin_icon.png) bottom;
-	position: relative;
-	left: 258px;
-	bottom: 50px;
-}
-#linkedin_icon:hover{
-	background-position: 0 0;
-}
-#fb_icon{
-	display: block;
-	height: 49px;
-	width: 46px;
-	background: url(images/fb_icon.png) bottom;
-	position: relative;
-	left: 315px;
-	bottom: 98px;
-}
-#fb_icon:hover{
-	background-position: 0 0;
-}
-#resume{
-	position: relative;
-	left: 780px;
-	bottom: 180px;
-}
 img{
 	position: relative;
-	left: 450px;
 
 }
 .clearfix {

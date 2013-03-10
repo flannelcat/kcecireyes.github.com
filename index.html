@@ -8,26 +8,42 @@
 
 <style>
 
+	html{
+		min-height: 100%;
+	}
+	
 	body {
+		display: block;
+		margin: 0;
 		background-color: #E6E6FA;
+		padding:0px;
+		margin:0px;
+		/*width:100%;
+		height:100%;*/
 	}
 	#pageWrapper{
 		font: bold 1.2em/2em 'Princess Sofia', Helvetica, sans-serif;
-		width: 1000px;
-		height: 620px;
+		/*width: 1000px;
+		height: 620px;*/
 		margin-left: auto;
 		margin-right: auto;
+		display: block;
 	} 
 	#footer{
-		position: relative;
+		position: fixed;
 		background-color: #9370DB;
-		width: 1000px;
-		height: 200px;
-		top: -447px;
-		opacity: 0.8;
+		width: 100%;
+		height: 130px;
+		clear: both;  
+		bottom: 0em;
+		padding-bottom: 0;
+		border-radius: 0px;
+		left: 0em;
+		display: block;
 	}
 	#contactme{
 		position: absolute;
+		bottom: -27px;
 		right: 20px;
 	}
 	#email:hover{
@@ -36,40 +52,42 @@
 	#email{
 		position: relative;
 		right: -70px;
-		bottom: -60px;
+		bottom: -30px;
 		opacity: 0.9;
+		display: block;
 	}
 	#twitter_icon{
 		display: block;
-		height: 51px;
-		width: 49px;
+		height: 48px;
+		width: 46px;
 		background: url(images/twitter_icon.png) bottom;
 		position: relative;
 		left: 200px;
+		bottom: 28px;
 	}
 	#twitter_icon:hover{
 		background-position: 0 0;
 	}
 	#linkedin_icon{
 		display: block;
-		height: 47.5px;
-		width: 48px;
+		height: 48px;
+		width: 46px;
 		background: url(images/linkedin_icon.png) bottom;
 		position: relative;
 		left: 258px;
-		bottom: 50px;
+		bottom: 76px;
 	}
 	#linkedin_icon:hover{
 		background-position: 0 0;
 	}
 	#fb_icon{
 		display: block;
-		height: 49px;
+		height: 48px;
 		width: 46px;
 		background: url(images/fb_icon.png) bottom;
 		position: relative;
 		left: 315px;
-		bottom: 98px;
+		bottom: 124px;
 	}
 	#fb_icon:hover{
 		background-position: 0 0;
@@ -77,11 +95,10 @@
 	#resume{
 		position: relative;
 		left: 780px;
-		bottom: 180px;
+		bottom: 206px;
 	}
 	#face{
-		border: 0px;	
-		position: relative;		
+		border: 0px;		
 	}
 	#mainFace{
 		position: relative;
@@ -111,15 +128,21 @@
 		padding: 0px;
 		margin:0px;
 		}
+		
 	#navbar{
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
 		font-size: 230%;
-		width: 300px;
 		}	
+		
+	:focus {
+		 outline: none; 
+		 }
+		 
 	#navbar li{
-		padding: 9px;
+		display: box;
+		padding: 9px; 
 		width: 174px;
 		color: #8A2BE2;
 	}	
@@ -127,6 +150,8 @@
 		position: relative;
 		left: 145px;
 		bottom: 70px;
+		width: 60px;
+		height: 40px;
 	}
 	#two{
 		position: relative;
@@ -137,6 +162,7 @@
 		position: relative;
 		left: 180px;
 		bottom: 35px;
+		width: 40px;
 	}
 	#underLogo{
 		position: relative;
@@ -180,20 +206,21 @@
 				<img id="mainFace" src="images/Main1.png" alt="my Face"  width="270px" height="405px"/>
 				<img id="workFace" src="images/Work1.png" style.visibility="hidden" alt="my work Face" width="357px" height="372px"/>
 			    <img id="funFace" src="images/Fun.png" alt="my fun Face" width="350px" height="412.5px" />
-			<div id="footer">
-				<img id="contactme" src="images/contactme.png" alt="My Contact info" />
-				<a href="mailto:kcr2118@columbia.edu?Subject=O%20Hai"><img id="email" src="images/email_icon.png" alt="Email Me" /></a>
-				<a id="twitter_icon" href="https://twitter.com/kcecireyes"></a> 
-				<a id="linkedin_icon" href="http://www.linkedin.com/in/kceciliareyes/"></a> 
-				<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a> 
-				<img id="resume" src="images/resume.png" alt="My Resume" />
-				
-				
-			</div> <!--End of footer -->
-			</div><!--End of face-->
+						</div><!--End of face-->
 		</div> <!--End of header -->
 	
 	</div> <!--End of pageWrapper -->
+	
+	<div id="footer">
+		<img id="contactme" src="images/contactme.png" alt="My Contact info" />
+		<a href="mailto:kcr2118@columbia.edu?Subject=O%20Hai"><img id="email" src="images/email_icon.png" alt="Email Me" /></a>
+		<a id="twitter_icon" href="https://twitter.com/kcecireyes"></a> 
+		<a id="linkedin_icon" href="http://www.linkedin.com/in/kceciliareyes/"></a> 
+		<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a> 
+		<img id="resume" src="images/resume.png" alt="My Resume" />
+		
+		
+	</div> <!--End of footer -->
 	
 	  <a href="images/image-1.jpg" rel="lightbox" title="drawing #1"></a>
 	

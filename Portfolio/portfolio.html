@@ -21,16 +21,37 @@
 
     <style>
     body {
-       	background-image: url('background.jpg');
+/*       	background-image: url('background.jpg');*/
+    	background-color: #FFF0F5;
+
+    }
+    html,body {
+    	height: 100%;
     }
     #pageWrapper {
     	font: bold 1.2em/2em 'Princess Sofia', Helvetica, sans-serif;
     	width: 1000px;
     	height: 600px;
-/*    	background-color: #E6E6FA;*/
     	margin-left: auto;
     	margin-right: auto;
+    	position: relative;
+    	min-height: 100%;
+    	padding-bottom: 100px;
     } 
+    
+    #footer{
+      	position: fixed;
+      	background-color: #DDA0DD;
+      	width: 100%;
+      	height: 100px;
+		clear: both;  
+		bottom: 0em;
+		padding-bottom: 0;
+		border-radius: 0px;
+		left: 0em;
+		
+		}
+      
     a {
     	text-decoration: none;
     	color: gray;
@@ -48,6 +69,7 @@
 		left: 100px;
 		text-shadow: black 0.2em 0.2em 0.3em;
     }
+    
     #workFace{
 		width: 280px;
 		height: 294.1px;    
@@ -55,20 +77,13 @@
     	left: 719px;
     	bottom: 400px;
        }
-     #footer{
-       	position: relative;
-       	background-color: #9370DB;
-       	width: 1000px;
-       	height: 200px;
-       	top: -412px;
-       	opacity: 0.8;
-       }
+   
      #logo{
 		width: 450px;
 		height: 260.4px;     
        	position: absolute;
        	right: 20px;
-       	bottom: -14px;
+       	bottom: -55px;
     	}
      #email:hover{
        	opacity: 1.0;
@@ -76,45 +91,46 @@
      #email{
        	position: relative;
        	right: -70px;
-       	bottom: -60px;
+       	bottom: -20px;
        	opacity: 0.9;
        }
      #twitter_icon{
-       	display: block;
-       	height: 51px;
-       	width: 49px;
-       	background: url(images/twitter_icon.png) bottom;
-       	position: relative;
-       	left: 200px;
-       }
+     	display: block;
+     	height: 48px;
+     	width: 46px;
+     	background: url(twitter_icon.png) bottom;
+     	position: relative;
+     	left: 200px;
+     	bottom: 40px;
+     }
      #twitter_icon:hover{
-       	background-position: 0 0;
-       }
+     	background-position: 0 0;
+     }
      #linkedin_icon{
-       	display: block;
-       	height: 47.5px;
-       	width: 48px;
-       	background: url(images/linkedin_icon.png) bottom;
-       	position: relative;
-       	left: 258px;
-       	bottom: 50px;
-       }
+     	display: block;
+     	height: 48px;
+     	width: 46px;
+     	background: url(linkedin_icon.png) bottom;
+     	position: relative;
+     	left: 258px;
+     	bottom: 89px;
+     }
      #linkedin_icon:hover{
-       	background-position: 0 0;
-       }
+     	background-position: 0 0;
+     }
      #fb_icon{
-       	display: block;
-       	height: 49px;
-       	width: 46px;
-       	background: url(images/fb_icon.png) bottom;
-       	position: relative;
-       	left: 315px;
-       	bottom: 98px;
-       }
+     	display: block;
+     	height: 48px;
+     	width: 46px;
+     	background: url(fb_icon.png) bottom;
+     	position: relative;
+     	left: 315px;
+     	bottom: 135px;
+     }
      #fb_icon:hover{
-       	background-position: 0 0;
-       }
-    
+     	background-position: 0 0;
+     }
+         
     @font-face {
       font-family: 'iconic';
       src:url('fonts/iconic.eot');
@@ -384,28 +400,21 @@
       <!-- Liquid Slider Ends Here -->
       
       <img id="workFace" src="Work1.png" alt="My Work face" />
-      
-      <div id="footer">
-      	<a href="Website/index.html">
-      		<img id="logo" src="logo.png" alt="My Logo" />
-      	</a>	
-      	<a href="mailto:kcr2118@columbia.edu?Subject=O%20Hai">
-      		<img id="email" src="email_icon.png" alt="Email Me" />
-      	</a>
-      	<a href="https://twitter.com/kcecireyes">
-      		<img id="twitter_icon" src="twitter_icon.png" alt="Twitter" />
-      	</a> 
-      	<a href="http://www.linkedin.com/in/kceciliareyes/">
-      		<img id="linkedin_icon" src="linkedin_icon.png" alt="LinkedIn" />
-      	</a> 
-      	<a href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn">
-      		<img id="fb_icon" src="fb_icon.png" alt="Facebook" />
-      	</a> 
-      	
-      </div> <!--End of footer -->
-      
-      
-   </div> <!-- end of PageWrapper -->
+   </body>  
+        
+  </div> <!-- end of PageWrapper -->
+
+   <div id="footer">
+       	<a href="Website/index.html">
+       		<img id="logo" src="logo.png" alt="My Logo" />
+       	</a>	
+        <a href="mailto:kcr2118@columbia.edu?Subject=O%20hHai">
+       		<img id="email" src="email_icon.png" alt="Email Me" />
+       	</a>
+       	<a id="twitter_icon" href="https://twitter.com/kcecireyes"></a> 
+       	<a id="linkedin_icon" href="http://www.linkedin.com/in/kceciliareyes/"></a> 
+       	<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a>
+       	
+   </div> <!--End of footer -->
     
-  </body>  
 </html>
