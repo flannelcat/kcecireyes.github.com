@@ -13,7 +13,7 @@
 		padding: 0px;
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
+		overflow: auto;
 	}
 	
 	body {
@@ -32,6 +32,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+		position: absolute;
 	} 
 	#footer{
 		position: fixed;
@@ -102,32 +103,32 @@
 		bottom: 206px;
 	}
 	#face{
-		border: 0px;		
+		border: 1px solid #333;		
 	}
 	#mainFace{
-		position: relative;
+		position: absolute;
 		left: 732px;
-		bottom: 430px;
+		bottom: -95px;
 		z-index: 2;		
 		}
 	
 	#workFace{
-		position: relative;
-		left: 372px;
-		bottom: 430px;
+		position: absolute;
+		left: 641px;
+		bottom: -95px;
 		z-index: 0;
 		visibility: hidden;
 	}	
 	#funFace{
-		position: relative;
-		left: 372px;
-		bottom: 430px;
+		position: absolute;
+		left: 641px;
+		bottom: -95px;
 		z-index: 0;
 		visibility: hidden;
 	}		
 	#logo{
 		position: relative;
-		left: 20px;
+		left: 6px;
 		top: 10px;
 		padding: 0px;
 		margin:0px;
@@ -138,6 +139,7 @@
 		margin: 0px;
 		padding: 0px;
 		font-size: 230%;
+		position: absolute;
 		}	
 		
 	:focus {
@@ -151,22 +153,22 @@
 		color: #8A2BE2;
 	}	
 	#one{
-		position: relative;
+		position: absolute;
 		left: 145px;
-		bottom: 70px;
+		bottom: 40px;
 		width: 60px;
 		height: 40px;
 	}
 	#two{
-		position: relative;
+		position: absolute;
 		left: 80px;
-		bottom:47px;
+		bottom: -29px;
 	}
 	#three{
-		position: relative;
+		position: absolute;
 		left: 180px;
-		bottom: 35px;
 		width: 40px;
+		bottom: -92px;
 	}
 	#underLogo{
 		position: relative;
@@ -206,11 +208,11 @@
 					</a>
 				</ul>
 				
-			<div id="face">
+			<!--<div id="face">-->
 				<img id="mainFace" src="images/Main1.png" alt="my Face"  width="270px" height="405px"/>
 				<img id="workFace" src="images/Work1.png" style.visibility="hidden" alt="my work Face" width="357px" height="372px"/>
 			    <img id="funFace" src="images/Fun.png" alt="my fun Face" width="350px" height="412.5px" />
-						</div><!--End of face-->
+			<!--</div><!--End of face--*>-->
 		</div> <!--End of header -->
 	
 	</div> <!--End of pageWrapper -->
