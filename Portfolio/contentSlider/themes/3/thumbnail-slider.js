@@ -3,14 +3,14 @@ var mct1_Options =
     sliderId: "mcts1",
     direction: "vertical",
     scrollInterval: 1900,
-    scrollDuration: 1100,
+    scrollDuration: 1000,
     hoverPause: true,
     autoAdvance: true,
-    scrollByEachThumb: true,
+    scrollByEachThumb: false,
     circular: true,
     largeImageSlider: null,
     inSyncWithLargeImageSlider: true,
-    license: "mylicense"
+    license: "mylicense",
 };
 
 var thumbnailSlider = new ThumbnailSlider(mct1_Options);

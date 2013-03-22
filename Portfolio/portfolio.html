@@ -31,10 +31,10 @@
     #pageWrapper {
     	font: bold 1.2em/2em 'Princess Sofia', Helvetica, sans-serif;
     	width: 1000px;
-    	height: 600px;
+    	height: 400px;
     	margin-left: auto;
     	margin-right: auto;
-    	position: relative;
+    	position: absolute;
     	min-height: 100%;
     	padding-bottom: 100px;
     } 
@@ -73,17 +73,19 @@
     #workFace{
 		width: 280px;
 		height: 294.1px;    
-    	position: relative;
+    	position: absolute;
     	left: 719px;
-    	bottom: 400px;
+    	bottom: 99px;
        }
    
      #logo{
+     	position: absolute;
 		width: 450px;
 		height: 260.4px;     
        	position: absolute;
        	right: 20px;
        	bottom: -55px;
+       	z-index: 2000;
     	}
      #email:hover{
        	opacity: 1.0;
@@ -279,6 +281,33 @@
  
  <div class="div2">
      <div id="mcts1">
+          <div class="each">
+             <img src="contentSlider/photos/nutella_lead.png" />
+             <div class="content">
+                 <p><strong> Nutella-gate</strong></p>
+                 <hr />
+                 <p>A total of $5,000 was reportedly spent on Nutella by Columbia Dining on the first week it introduced the hazelnut spread. This story sparked national attention and coverage by the New York Times, CNN, Yahoo! among many others. </p> <br />
+                 <p><a href="http://www.columbiaspectator.com/2013/03/05/nutella-ferris-booth-costs-dining-5000-week-part-due-dining-hall-thievery">Read More</a></p>
+             </div>
+         </div>
+                  <div class="each">
+             <img src="contentSlider/photos/1020.jpg" />
+             <div class="content">
+                 <p><strong>Busted!</strong></p>
+                 <hr />
+                 <p> At approximately 8:00 pm, a tall bearded man ordered a drink at a bar popular among Columbia students. The problem? The man was nineteen and working for the NYPD. </p> <br />
+                 <p><a href="http://www.columbiaspectator.com/2013/02/22/1020-fined-underage-drinking-after-police-sting">Read More</a></p>
+             </div>
+         </div>
+         <div class="each">
+             <img src="contentSlider/photos/flipped_lead.png" />
+             <div class="content">
+                 <p><strong>Car accident leaves three hurt</strong></p>
+                 <hr />
+                 <p> Three people were injured after a car flipped at the intersection of 113th and Broadway. </p> <br />
+                 <p> <a href="http://www.columbiaspectator.com/2013/02/11/car-acccident-injures-3">Read More</a></p>
+             </div>
+         </div>
          <div class="each">
              <img src="contentSlider/photos/SWS_thumb.jpg" />
              <div class="content">
@@ -296,16 +325,7 @@
                  <p>The smaller serving size of sugary drinks could have a marked effect in Harlem, where obesity rates are higher than the rest of the city. But some local politicians and residents are concerned.</p> <br />
                  <p><a href="http://www.columbiaspectator.com/2012/09/14/soda-ban-passes-board-health-vote">Read More</a></p>
              </div>
-         </div>
-         <div class="each">
-             <img src="contentSlider/photos/stairs_lead.jpg" />
-             <div class="content">
-                 <p><strong>Riverside Stairs</strong></p>
-                 <hr />
-                 <p>A total of $1.2 million was pledged by City Council member Inez Dickens and Manhattan Borough President Scott Stringer to fix two aging staircases between Riverside Park and St. Clair Place and Tiemann Place.</p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2012/11/30/local-officials-support-riverside-park-repair-staircases">Read More</a></p>
-             </div>
-         </div>
+         </div>         
          <div class="each">
              <img src="contentSlider/photos/Obit_lead.png" />
              <div class="content">
@@ -315,15 +335,7 @@
                  <p><a href="http://www.columbiaspectator.com/2012/12/05/alums-remember-karl-ludwig-selig-inspiring-professor-mentor">Read More</a></p>
              </div>
          </div>
-         <div class="each">
-             <img src="contentSlider/photos/Fire_lead.jpg" />
-             <div class="content">
-                 <p><strong>Fireside Chat with Bollinger</strong></p>
-                 <hr />
-                 <p>When a student asked what exactly the Global Centers—a favorite topic of Bollinger’s—were intended for, Bollinger answered by asking attendees to raise their hand if they had been to China. About six hands went up. </p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2012/11/28/bollinger-fireside-chat-we-hear-you-arts-initiative">Read More</a></p>
-             </div>
-         </div>
+         
          
      </div>  
  </div> 
@@ -416,5 +428,19 @@
        	<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a>
        	
    </div> <!--End of footer -->
+   
+   <script type="text/javascript">
+   
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-39200555-1']);
+     _gaq.push(['_trackPageview']);
+   
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   
+   </script>
     
 </html>
