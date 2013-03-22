@@ -60,7 +60,7 @@
 #mcts1 .navPrev, #mcts1 .navNext, #mcts1 .navPlay, #mcts1 .navPause 
 {
     width:45px; height:45px; position:absolute;  
-    background: transparent url(navButtons.png); 
+    background: transparent url('navButtons.png'); 
     background-repeat: no-repeat;
     display:inline-block; z-index:5; cursor:pointer;
     top:100px;
