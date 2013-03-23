@@ -8,13 +8,17 @@
     <meta name="description" content="Liquid Slider : A JQuery Slider Plugin" />
     
     <link href='http://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-    <link href="css/lightbox.css" rel="stylesheet" /><link href="themes/generic.css" rel="stylesheet" type="text/css" />
-    <link href="contentSlider/themes/3/slider.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<!--Content slider-->
+	<link rel="shortcut icon" href="../favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="CircularContentCarousel/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="CircularContentCarousel/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="CircularContentCarousel/css/jquery.jscrollpane.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+	<!--Drawing slider-->
     <link rel="stylesheet" type="text/css" media="screen" href="Liquid Slider/stylesheets/liquid-slider-1.1.css">
- 
-    <script src="myLightbox/js/lightbox.js"></script>
-    <script src="contentSlider/themes/3/thumbnail-slider.js" type="text/javascript"></script>
     <script src="Liquid Slider/js/jquery-1.8.2.min.js"></script>
     <script src="Liquid Slider/js/jquery-ui-1.8.20.custom.min.js"></script>
     <script src="Liquid Slider/js/jquery.liquid-slider-1.1.min.js"></script>
@@ -52,6 +56,13 @@
 		
 		}
       
+    #inProgress{
+    	width: 380px;
+    	bottom: 100px;
+    	position: absolute;
+    	height: 230px;
+    	left: 260px;
+    }  
     a {
     	text-decoration: none;
     	color: gray;
@@ -74,8 +85,8 @@
 		width: 280px;
 		height: 294.1px;    
     	position: absolute;
-    	left: 719px;
-    	bottom: 99px;
+    	left: 850px;
+    	bottom: 69px;
        }
    
      #logo{
@@ -248,101 +259,179 @@
     <title>My Portfolio</title>
     <script>
         $(function(){
-    
-          /* Here is the slider using default settings *!/*/
           $('#slider-id').liquidSlider();
-          /* If you want to adjust the settings, you set an option
-             as follows:
-    
-              $('#slider-id').liquidSlider({
-                autoSlide:false,
-                autoHeight:false
-              });
-    
-             Find more options at http://liquidslider.kevinbatdorf.com/
-          */
-    
-          /* If you need to access the internal property or methods, use this method.
-    
-          var sliderObject = $.data( $('#slider-id')[0], 'liquidSlider');
-          console.log(sliderObject);
-    
-          */
-    
-    
         });
         </script> 
-    
+        
   </head>
  
-  <body class='no-js' style="margin:0">
+ <body class='no-js' style="margin:0">
  <div id="pageWrapper">
  <h1>My Work</h1>
  
- <div class="div2">
-     <div id="mcts1">
-          <div class="each">
-             <img src="contentSlider/photos/nutella_lead.png" />
-             <div class="content">
-                 <p><strong> Nutella-gate</strong></p>
-                 <hr />
-                 <p>A total of $5,000 was reportedly spent on Nutella by Columbia Dining on the first week it introduced the hazelnut spread. This story sparked national attention and coverage by the New York Times, CNN, Yahoo! among many others. </p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2013/03/05/nutella-ferris-booth-costs-dining-5000-week-part-due-dining-hall-thievery">Read More</a></p>
-             </div>
-         </div>
-                  <div class="each">
-             <img src="contentSlider/photos/1020.jpg" />
-             <div class="content">
-                 <p><strong>Busted!</strong></p>
-                 <hr />
-                 <p> At approximately 8:00 pm, a tall bearded man ordered a drink at a bar popular among Columbia students. The problem? The man was nineteen and working for the NYPD. </p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2013/02/22/1020-fined-underage-drinking-after-police-sting">Read More</a></p>
-             </div>
-         </div>
-         <div class="each">
-             <img src="contentSlider/photos/flipped_lead.png" />
-             <div class="content">
-                 <p><strong>Car accident leaves three hurt</strong></p>
-                 <hr />
-                 <p> Three people were injured after a car flipped at the intersection of 113th and Broadway. </p> <br />
-                 <p> <a href="http://www.columbiaspectator.com/2013/02/11/car-acccident-injures-3">Read More</a></p>
-             </div>
-         </div>
-         <div class="each">
-             <img src="contentSlider/photos/SWS_thumb.jpg" />
-             <div class="content">
-                 <p><strong>Faculty House Workers</strong></p>
-                 <hr />
-                 <p>After almost 10 months of negotiations, an agreement over the contract for Faculty House employees still has not yet been reached.</p> <br />
-                 <p> <a href="http://www.columbiaspectator.com/2013/01/16/students-faculty-house-employees-continue-negotiate-contracts-labor-administrators">Read More</a></p>
-             </div>
-         </div>
-         <div class="each">
-             <img src="contentSlider/photos/soda_thumb.jpg" />
-             <div class="content">
-                 <p><strong>Soda Ban</strong></p>
-                 <hr />
-                 <p>The smaller serving size of sugary drinks could have a marked effect in Harlem, where obesity rates are higher than the rest of the city. But some local politicians and residents are concerned.</p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2012/09/14/soda-ban-passes-board-health-vote">Read More</a></p>
-             </div>
-         </div>         
-         <div class="each">
-             <img src="contentSlider/photos/Obit_lead.png" />
-             <div class="content">
-                 <p><strong> Alumnus Obituary</strong></p>
-                 <hr />
-                 <p>Selig was awarded Columbia’s Mark van Doren Award for Teaching in 1974. Students described him as a "passionate scholar" who "revealed to all who knew him the delights and rewards of a life in scholarship."</p> <br />
-                 <p><a href="http://www.columbiaspectator.com/2012/12/05/alums-remember-karl-ludwig-selig-inspiring-professor-mentor">Read More</a></p>
-             </div>
-         </div>
-         
-         
-     </div>  
- </div> 
- <br /><br /><br />
+  <div class="container">
+   	<div id="ca-container" class="ca-container">
+ 		<div class="ca-wrapper">
+ 			<div class="ca-item ca-item-1">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Nutella-gate</h3>
+ 					<h4>
+ 						<span class="ca-quote">&ldquo;</span>
+ 						<span> A total of $5,000 was reportedly spent on Nutella by Columbia Dining on the first week it introduced the hazelnut spread. </span>
+ 					</h4>
+ 						<a href="#" class="ca-more">more...</a>
+ 				</div>
+ 				<div class="ca-content-wrapper">
+ 					<div class="ca-content">
+ 						<h6> A national craze </h6>
+ 						<a href="#" class="ca-close">close</a>
+ 						<div class="ca-content-text">
+ 							<p> "It seems like undergrads have a sweet tooth—and it’s costing Dining $5,000 per week in Nutella. </p>
+ 							<p>Since Dining started offering the sweet spread in Ferris Booth Commons last month, administrators have observed a high demand for Nutella—up to 100 pounds per day. But that seemly sum could be due in part to students stealing the chocolate-hazelnut topping..."</p>
+ 							<p>This story was picked up by the New York Times, CNN, and Yahoo! among many others. </p>
+  						</div>
+ 						<ul>
+ 							<li><a href="http://www.columbiaspectator.com/2013/03/05/nutella-ferris-booth-costs-dining-5000-week-part-due-dining-hall-thievery">Read more</a></li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="ca-item ca-item-2">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Busted!</h3>
+ 							<h4>
+ 								<span class="ca-quote">&ldquo;</span>
+ 								<span> A tall bearded man ordered a drink at a bar popular among Columbia students. The problem? The man was nineteen and working for the NYPD. </span>
+ 							</h4>
+ 								<a href="#" class="ca-more">more...</a>
+ 						</div>
+ 						<div class="ca-content-wrapper">
+ 							<div class="ca-content">
+ 								<h6> A "minor" problem </h6>
+ 								<a href="#" class="ca-close">close</a>
+ 								<div class="ca-content-text">
+ 									<p> "1020 was fined for allowing underage drinking after a police sting operation Thursday night. </p>
+ 									<p>Around 7 p.m., a 19-year-old undercover police recruit was served by a bartender at 1020, a local bar at Amsterdam Avenue and 110th Street considered a favorite by students. 1020 will face a fine of $1,500 and a possible revocation of its alcohol license.</p>
+ 									<p>The man was 6-foot-6, had a beard, and looked like he was 30, according to management..."</p>
+ 									</div>
+ 								<ul>
+ 									<li><a href="http://www.columbiaspectator.com/2013/02/22/1020-fined-underage-drinking-after-police-sting">Read more</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					
+  			<div class="ca-item ca-item-3">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Car accident</h3>
+ 							<h4>
+ 								<span class="ca-quote">&ldquo;</span>
+ 								<span> Three people were injured after a car flipped at the intersection of 113th and Broadway.</span>
+ 							</h4>
+ 								<a href="#" class="ca-more">more...</a>
+ 						</div>
+ 						<div class="ca-content-wrapper">
+ 							<div class="ca-content">
+ 								<h6> Slippery roads </h6>
+ 								<a href="#" class="ca-close">close</a>
+ 								<div class="ca-content-text">
+ 									<p> "The car hit a pole between 111th and 112th streets around 3:40 p.m. Bystanders gathered quickly around the scene at the sounds of the skidding and ambulance. </p>
+ 									
+ 									<p>“The police was here and had turned the car over by the time I got here,” Orlando Pavia, who lives east of Morningside Heights, said. </p>
+ 									<p>Adam Saadeh, a Morningside Heights resident, said that among the injured was “a boy, maybe 10, 12. He wasn’t hurt, just stuck,” and said that the police pulled him out from the accident..."</p>
+ 									</div>
+ 								<ul>
+ 									<li><a href="http://www.columbiaspectator.com/2013/02/11/car-acccident-injures-3">Read more</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					
+  			<div class="ca-item ca-item-4">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Not giving up</h3>
+ 							<h4>
+ 								<span class="ca-quote">&ldquo;</span>
+ 								<span> After almost 10 months of negotiations, an agreement over the contract for Faculty House employees still has not yet been reached </span>
+ 							</h4>
+ 								<a href="#" class="ca-more">more...</a>
+ 						</div>
+ 						<div class="ca-content-wrapper">
+ 							<div class="ca-content">
+ 								<h6> A living wage </h6>
+ 								<a href="#" class="ca-close">close</a>
+ 								<div class="ca-content-text">
+ 									<p> "An agreement over the contracts of the Faculty House employees has still not yet been reached, despite repeated attempts from the workers to strike a deal with administrators since last March </p>
+ 									<p>Since the beginning of December, SWS has been meeting with Faculty House workers and Labor Relations administrators to discuss what they consider unfair contracts in preparation for the next negotiation meeting, scheduled for Jan. 23..."</p>
+ 									
+ 									</div>
+ 								<ul>
+ 									<li><a href="http://www.columbiaspectator.com/2013/01/16/students-faculty-house-employees-continue-negotiate-contracts-labor-administrators">Read more</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+  			<div class="ca-item ca-item-5">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Soda Ban Passes</h3>
+ 							<h4>
+ 								<span class="ca-quote">&ldquo;</span>
+ 								<span> Obesity rates in Harlem are higher than the rest of the city, and now there's a soda ban...</span>
+ 							</h4>
+ 								<a href="#" class="ca-more">more...</a>
+ 						</div>
+ 						<div class="ca-content-wrapper">
+ 							<div class="ca-content">
+ 								<h6> "What's next?" </h6>
+ 								<a href="#" class="ca-close">close</a>
+ 								<div class="ca-content-text">
+ 									<p> "After months of debate, the New York City Board of Health voted on Thursday to limit the serving size of large sugary drinks to 16 ounces. </p>
+ 									<p>The so-called “soda ban,” proposed by Mayor Michael Bloomberg in May, aims to combat obesity and related diseases like diabetes—and could have a marked effect in northern Manhattan.</p>
+ 									<p>In Harlem, obesity has long been a widespread problem. A 2008 study by the New York City Department of Health and Mental Hygiene found that four in 10 adults in East and Central Harlem drink four or more sugary drinks daily, compared with one in 10 on the Upper West Side..." </p>
+ 									</div>
+ 								<ul>
+ 									<li><a href="http://www.columbiaspectator.com/2012/09/14/soda-ban-passes-board-health-vote">Read more</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+  			<div class="ca-item ca-item-6">
+ 				<div class="ca-item-main">
+ 					<div class="ca-icon"></div>
+ 					<h3>Beloved</h3>
+ 							<h4>
+ 								<span class="ca-quote">&ldquo;</span>
+ 								<span> Karl-Ludwig Selig is remembered as an inspiring professor, mentor. </span>
+ 							</h4>
+ 								<a href="#" class="ca-more">more...</a>
+ 						</div>
+ 						<div class="ca-content-wrapper">
+ 							<div class="ca-content">
+ 								<h6>A life of scholarship</h6>
+ 								<a href="#" class="ca-close">close</a>
+ 								<div class="ca-content-text">
+ 									<p> "Cervantes scholar Karl-Ludwig Selig, who spent decades teaching Spanish literature at Columbia, died early Saturday morning at Kateri Residence, a local nursing home. </p>
+ 									<p>Selig was awarded Columbia’s Mark van Doren Award for Teaching in 1974. A celebrated enthusiast of Miguel de Cervantes’ “Don Quixote”—which he emphatically pronounced as “kwixot”—Selig’s former students remembered him for his love of literature and teaching, his Colloquium on Comparative Literature, and his course 'The Picaresque Novel'..."</p> 
+ 								</div>
+ 								<ul>
+ 									<li><a href="http://www.columbiaspectator.com/2012/12/05/alums-remember-karl-ludwig-selig-inspiring-professor-mentor">Read more</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+  	 		</div>
+ 	</div>
+ </div>
  
+ <img id="inProgress" src="progress.png" alt="For more samples of my work" />
+  
 <!-- Liquid Slider begins here-->
-    <body class='no-js' style="margin:0">
+<!--    <body class='no-js' style="margin:0">
         <div class="liquid-slider"  id="slider-id">
           <div>
             <h2 class="title"></h2>
@@ -408,11 +497,36 @@
             <h2 class="title"></h2>
             <img src="SmallDrawings/13.jpg" alt="Image 13 of 13" />
         </div>
-       </div> <!--end of class="liquid-slider"-->        
+       </div> --><!--end of class="liquid-slider"-->    
+           
       <!-- Liquid Slider Ends Here -->
       
       <img id="workFace" src="Work1.png" alt="My Work face" />
    </body>  
+       
+    <script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-39200555-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="CircularContentCarousel/js/jquery.easing.1.3.js"></script>
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="CircularContentCarousel/js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="CircularContentCarousel/js/jquery.contentcarousel.js"></script>
+        
+        <script type="text/javascript">
+        	$('#ca-container').contentcarousel();
+        </script>
         
   </div> <!-- end of PageWrapper -->
 
@@ -428,19 +542,5 @@
        	<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a>
        	
    </div> <!--End of footer -->
-   
-   <script type="text/javascript">
-   
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-39200555-1']);
-     _gaq.push(['_trackPageview']);
-   
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-   
-   </script>
     
 </html>
