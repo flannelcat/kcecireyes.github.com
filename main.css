@@ -20,11 +20,13 @@ h1{
 	display: block;
 }
 #times{
-	width: 60%;
-	height: 100%;
+	width: 50%;
+	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	position: relative;
+	top: 200px;
 }
 .circle{
 	display: block;
