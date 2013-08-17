@@ -1,249 +1,90 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-  <meta name="description" content="Cecilia Reyes - Columbia University student. About me, projects, interest and wok portfolio" />
-<link href='http://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
-<link href="css/lightbox.css" rel="stylesheet" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Cecilia Reyes - Columbia University student. About me, resume, portfolio" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
 
-<style>
-
-	html{
-		min-height: 100%;
-	}
-	
-	body {
-		display: block;
-		margin: 0;
-		background-color: #E6E6FA;
-		padding:0px;
-		margin:0px;
-		/*width:100%;
-		height:100%;*/
-	}
-	#pageWrapper{
-		font: bold 1.2em/2em 'Princess Sofia', Helvetica, sans-serif;
-		/*width: 1000px;
-		height: 620px;*/
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	} 
-	#footer{
-		position: fixed;
-		background-color: #9370DB;
-		width: 100%;
-		height: 130px;
-		clear: both;  
-		bottom: 0em;
-		padding-bottom: 0;
-		border-radius: 0px;
-		left: 0em;
-		display: block;
-	}
-	#contactme{
-		position: absolute;
-		bottom: -27px;
-		right: 20px;
-	}
-	#email:hover{
-		opacity: 1.0;
-	}
-	#email{
-		position: relative;
-		right: -70px;
-		bottom: -30px;
-		opacity: 0.9;
-		display: block;
-	}
-	#twitter_icon{
-		display: block;
-		height: 48px;
-		width: 46px;
-		background: url(images/twitter_icon.png) bottom;
-		position: relative;
-		left: 200px;
-		bottom: 28px;
-	}
-	#twitter_icon:hover{
-		background-position: 0 0;
-	}
-	#linkedin_icon{
-		display: block;
-		height: 48px;
-		width: 46px;
-		background: url(images/linkedin_icon.png) bottom;
-		position: relative;
-		left: 258px;
-		bottom: 76px;
-	}
-	#linkedin_icon:hover{
-		background-position: 0 0;
-	}
-	#fb_icon{
-		display: block;
-		height: 48px;
-		width: 46px;
-		background: url(images/fb_icon.png) bottom;
-		position: relative;
-		left: 315px;
-		bottom: 124px;
-	}
-	#fb_icon:hover{
-		background-position: 0 0;
-	}
-	#resume{
-		position: relative;
-		left: 780px;
-		bottom: 206px;
-	}
-	#face{
-		border: 0px;		
-	}
-	#mainFace{
-		position: absolute;
-		left: 733px;
-		bottom: 128px;
-		z-index: 2;		
-		}
-	
-	#workFace{
-		position: absolute;
-		left: 650px;
-		bottom: 128px;
-		z-index: 0;
-		visibility: hidden;
-	}	
-	#funFace{
-		position: absolute;
-		left: 648px;
-		bottom: 128px;
-		z-index: 0;
-		visibility: hidden;
-	}		
-	#logo{
-		position: relative;
-		left: 20px;
-		top: 10px;
-		padding: 0px;
-		margin:0px;
-		}
-		
-	#navbar{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		font-size: 230%;
-		}	
-		
-	:focus {
-		 outline: none; 
-		 }
-		 
-	#navbar li{
-		display: box;
-		padding: 9px; 
-		width: 174px;
-		color: #8A2BE2;
-	}	
-	#one{
-		position: absolute;
-		left: 145px;
-		bottom: 280px;
-		width: 60px;
-		height: 40px;
-	}
-	#two{
-		position: absolute;
-		left: 80px;
-		bottom: 200px;
-	}
-	#three{
-		position: absolute;
-		left: 180px;
-		bottom: 130px;
-		width: 40px;
-	}
-	#underLogo{
-		position: relative;
-		width: 500px;
-		left: 320px ;
-		top: -85px;		
-	}
-	a{
-		text-decoration: none;
-	}
-
-	</style> 
-
-<title>Cecilia Reyes</title>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<title>Cecilia Reyes</title>
 </head>
 
 <body>
 	<div id="pageWrapper">
-		<div id="header">
-		
-		<a href="index.html">
-			<img src="images/logo.png" alt="Cecilia Reyes" width="830px" height="397px" id="logo" />
-			</a> 
-		<h1 id="websiteTitle?"></h1>
-		<p id="underLogo">at the crossroads of computer science and journalism</p>
-	
-					<ul id="navbar">
-					<a href="About/timeline/aboutme.html" target="_self" tabindex="1">
-						<li id="one" onmouseover="this.style.color='#ff69b4'" onmouseout="this.style.color='#8A2BE2'" >About me</li> 
-					</a>
-					<a href="Portfolio/portfolio.html" target="_self" tabindex="2">
-						<li id="two" onmouseover="this.style.color='#ff69b4'; makeVisible('workFace');" onmouseout="this.style.color='#8A2BE2'; noVisible('workFace');" >My work </li>
-					</a>
-					<a href="fun.html" target="_self" tabindex="3">
-						<li id="three" onmouseover="this.style.color='#ff69b4'; makeVisible('funFace');" onmouseout="this.style.color='#8A2BE2'; noVisible('funFace');" >Fun</li>
-					</a>
-				</ul>
-				
-			<div id="face">
-				<img id="mainFace" src="images/Main1.png" alt="my Face"  width="270px" height="405px"/>
-				<img id="workFace" src="images/Work1.png" style.visibility="hidden" alt="my work Face" width="357px" height="372px"/>
-			    <img id="funFace" src="images/Fun.png" alt="my fun Face" width="350px" height="412.5px" />
-						</div><!--End of face-->
-		</div> <!--End of header -->
-	
-	</div> <!--End of pageWrapper -->
-	
-	<div id="footer">
-		<img id="contactme" src="images/contactme.png" alt="My Contact info" />
-		<a href="mailto:kcr2118@columbia.edu?Subject=Oh%20Hai"><img id="email" src="images/email_icon.png" alt="Email Me" /></a>
-		<a id="twitter_icon" href="https://twitter.com/kcecireyes"></a> 
-		<a id="linkedin_icon" href="http://www.linkedin.com/in/kceciliareyes/"></a> 
-		<a id="fb_icon" href="https://www.facebook.com/cecilia.reyes.9?ref=tn_tnmn"></a> 
-		<img id="resume" src="images/resume.png" alt="My Resume" />
-		
-		
-	</div> <!--End of footer -->
-	
-	  <a href="images/image-1.jpg" rel="lightbox" title="drawing #1"></a>
-	
+		<!-- Contact -->
+		<a target="_blank" href="http://www.twitter.com/kcecireyes">
+			<div class="circle" id="twitter_icon"><h1>t</h1></div> 
+		</a>	
+		<a target="_blank" href="http://www.linkedin.com/in/kceciliareyes/">
+			<div class="circle" id="linkedin_icon"><h1>l</h1></div>
+		</a>
+		<a target="_blank" href="https://www.facebook.com/k.cecilia.reyes?ref=tn_tnmn">
+			<div class="circle" id="fb_icon">
+				<h1>f</h1></div> 
+			</a>
+			<!-- End of contact -->	
+			<div class="lol"></div>
+			<!-- Navigation -->
+			<ul id="navbar">
+				<a href="" target="_self" tabindex="1">
+					<li id="about">About me</li> 
+				</a>
+				<a href="images/resume.pdf" target="_self" tabindex="2">
+					<li id="resume">Resume</li>
+				</a>
+				<a href="" target="_self" tabindex="3">
+					<li id="work">Work</li>
+				</a>
+			</ul>
+			<!-- End of Navigation --> 
+			<div id="arrow"></div>
+			<a href="index.html">
+				<img id="logo" src="images/logo.png" alt="Cecilia Reyes" width="830px" height="397px"/>
+			</a> 	
+		</div> <!--End of pageWrapper -->
 
-<script language="javascript" type="text/javascript">
-	
-	function makeVisible(idName) {
-		document.getElementById(idName).style.visibility="visible";
-		document.getElementById("mainFace").style.visibility="hidden";
-		return true;
-	}
-	
-	function noVisible(idName) {
-		document.getElementById("mainFace").style.visibility="visible";
-		document.getElementById(idName).style.visibility="hidden";
-		return true;
-	}
+		<script type="text/javascript">
 
-	
-</script>
-<noscript>
-	<h3>This site requires JavaScript</h3>
- </noscript>
+		// Set height to window size always	
+		$(window).resize(function (){
+			$("#pageWrapper").css("height", $(window).height() + "px");
+		});
+		$(window).load(function () {
+			$("#pageWrapper").css("height", $(window).height() + "px");
+		});
 
- </body>
+		$("#about").hover(function () {
+			$("#logo").css("display", "none");
+			$("<img id='face' src='images/about.png'/>").insertAfter("#arrow");
+			$("#arrow").css("display","none");
+		},
+		function () {
+			$("#face").remove();
+			$("#logo").css("display", "block");
+			$("#arrow").css("display","block");
+		});
+
+		$("#work").hover(function () {
+			$("#logo").css("display", "none");
+			$("<img id='times' src='images/GWTT.png'/>").insertAfter("#arrow");
+			$("#arrow").css("display","none");
+		},
+		function () {
+			$("#times").remove();
+			$("#logo").css("display", "block");
+			$("#arrow").css("display","block");
+		});
+
+
+
+
+
+	</script>
+	<noscript>
+		<h3>This site requires JavaScript</h3>
+	</noscript>
+</body>
 </html>
