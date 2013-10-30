@@ -12,19 +12,33 @@
 
 </head>
 <style type="text/css">
-  html,p,h2{
+  html,p,h1{
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: bolder;
+  color: white;
 }
-
+html { 
+  background: url(perennial.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*-webkit-filter: blur(10px);*/
 p{
   font-size: 120%;
+  width: 50%;
 }
-
 text {
     font: 15px 'Lato';
 }
-
+#info{
+  background: rgba(220,220,220,0.8);
+  color:black;
+  position: absolute;
+  text-align: center;
+  left: 15%;
+}
 form {
   position: absolute;
   right: 230px;
@@ -32,20 +46,24 @@ form {
 }
 
 label{
+  color: black;
   padding: 2px;
 }
 
 </style>
 <body>
-	<h2>DATA</h2>
-	<div id="pie">
-		<p>Breakdown of categories per evergreen and perennial websites</p>
-		<form>
-			<label><input type="radio" name="dataset" value="Evergreen" checked> Evergreen</label>
-			<label><input type="radio" name="dataset" value="Perennial"> Perennial</label>
-		</form>
-	</div>
-
+	<h1>DATA</h1>
+<div id="pie">
+	<p>Breakdown of categories per evergreen and ephemeral websites</p>
+	<form>
+		<label><input type="radio" name="dataset" value="Evergreen" checked> Evergreen</label>
+		<label><input type="radio" name="dataset" value="Ephemeral"> Ephemeral</label>
+	</form>
+</div>
+<div>
+  <p id="info"><bold>Evergreen</bold> websites are those that remain popular and relevant to users across time. <br>
+  <bold>Ephemeral</bold> websites, on the other hand, decay in usefulness after a while. </p>
+</div>
 </body>
 
 <script type="text/javascript">	
@@ -133,7 +151,7 @@ category = ["arts_entertainment", "business","computer_internet","culture_politi
 var colorS = d3.scale.category20();
 
 var pie = d3.layout.pie()
-.value(function(d) { return d.Perennial; })
+.value(function(d) { return d.Ephemeral; })
 .sort(null);
 
 var arc = d3.svg.arc()
@@ -163,7 +181,7 @@ function loadData () {
 
   var timeout = setTimeout(function() {
     d3.select("input[value=\"Evergreen\"]").property("checked", true).each(change);
-    d3.select("input[value=\"Perennial\"]").property("checked", true).each(change);
+    d3.select("input[value=\"Ephemeral\"]").property("checked", true).each(change);
   }, 2000);
 
   function change() {
@@ -175,7 +193,7 @@ function loadData () {
   path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
   
   path.call(d3.helper.tooltip()
-     .style({color: 'black'})
+     .style({color: '#111', 'font-family': 'Lato', 'background': 'rgba(220,220,220,0.8)' }) 
      .text(function(d, i){ return category[i]; })
      )
   .on('mouseover', function(d, i){ d3.select(this).style({opacity: '0.7'}); })
@@ -187,7 +205,7 @@ function loadData () {
 
 function type(d) {
   d.Evergreen = +d.Evergreen;
-  d.Perennial = +d.Perennial;
+  d.Ephemeral = +d.Ephemeral;
   return d;
 }
 
