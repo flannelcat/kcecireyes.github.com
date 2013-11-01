@@ -1,0 +1,124 @@
+<html>
+<head>
+        <title>Work</title>
+        <link rel="stylesheet" href="other.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+        </script>
+</head>
+<body>
+  <div class="wrapper">  
+        <div id="left" >
+                <a href="/work.html" class="name">Work</a>      
+                <ul class="nav">
+                        <a href="#nydn_sample" id="nydn" class="clicked"> NYDaily News </a>
+                        <a href="#wgbh_sample" id="wgbh" class="not_clicked"> WGBH </a>
+                        <a href="#spec_sample" id="spec" class="not_clicked"> Spectator </a>
+                </ul>        
+        </div>
+        <div id="right">
+                <h1 id="nydn_sample">New York Daily News</h1>
+                <div class="work_sample" id="sandy">
+                        <p> This interactive graphic displays information about the people who lived in Sandy's inundation zone. </p>   
+                        <a href="http://www.nydailynews.com/new-york/hurricane-sandy/sandy-flood-zone-interactive-graphic-article-1.1499707">
+                        <img src="images/work_samples/sandy.png">
+                        </a>
+                </div>       
+                <div class="work_sample"id="property" >
+                        <p> This map accompanies a story about property tax inequality. It displays the gaps in property taxation in affluent and poor neighborhoods of New York City</p>  
+                        <a href="http://www.nydailynews.com/new-york/higher-income-areas-taxes-poorer-counterparts-article-1.1470735">
+                        <img src="images/work_samples/property.png">
+                        </a>
+                </div>             
+                
+                <h1 id="wgbh_sample">WGBH Foundation</h1>
+                 <div class="work_sample"id="pri">
+                        <p>This is one of the drafts I made in Illustrator for PRI's radio series on the infertility belt of Africa. I worked side by side with a designer, and talked to the main reporter of the story, Sonia Narang. </p>
+                        <a href="images/work_samples/Draft.png">
+                                <img src="images/work_samples/infertility.png">
+                        </a>
+                </div>        
+                <div class="work_sample"id="times">
+                        <p> Get With The Times is a simple web app that queries the NYTimes for the most popular articles of the day. Clicking on one article displays geographical information about where the commenters of the article are from in the U.S. (this still takes a bit of time. Also note that some articles don't have comments yet)
+                        This was a joint project with <a style='text-decoration: none;' href='https://github.com/alexandraorth'> Alexandra Orth. </a></p>  
+                        <a href="http://getwiththetimes.herokuapp.com/">
+                        <img src="images/work_samples/GWTT.png">
+                        </a>
+                </div>     
+                <div class="work_sample"id="longform">
+                        <p>Longform -ongoing. This will eventually become an interactive feature for the Columbia Daily Spectator. Visit the repo, clone it, locahost it. Resize it, it's responsive!</p>  
+                        <a href="https://github.com/kcecireyes/LongForm">
+                        <img src="images/work_samples/longform.png">
+                        </a>
+                </div>     
+                <h1 id="spec_sample">Columbia Daily Spectator</h1>
+                <div class="work_sample"id="tc">
+                        <p>Faculty voted to reject the proposed FY'14 budget after finding out that Teacher College's top administrators, including president Susan Fuhrman, had given themselves bonuses totaling over $300,000 in 2011-12. </p>  
+                        <a href="http://www.columbiaspectator.com/2013/05/10/teachers-college-faculty-vote-not-support-proposed-2013-14-budget">
+                        <img src="images/work_samples/tc.png">
+                        </a>
+                </div>
+                <div class="work_sample"id="nutella">
+                        <p>Since Dining started offering Nutella in Ferris Booth last month, administrators have observed a high demand for the sweet spread—up to 100 pounds per day.</p>  
+                        <a href="http://www.columbiaspectator.com/2013/03/05/nutella-ferris-booth-costs-dining-5000-week-part-due-dining-hall-thievery">
+                        <img src="images/work_samples/nutella.png">
+                        </a>
+                </div>
+                <div class="work_sample"id="sting">
+                        <p>A 19-year-old undercover police recruit was served at 1020 Thursday night. The bar will face a fine of $1,500 and a possible revocation of its alcohol license.</p> 
+                        <a href="http://www.columbiaspectator.com/2013/02/22/1020-fined-underage-drinking-after-police-sting-could-lose-liquor-license">
+                        <img src="images/work_samples/1020.png">
+                        </a>
+                </div>     
+                <div class="work_sample"id="sws">
+                        <p>After almost 10 months of negotiations, an agreement over the contract for Faculty House employees still has not yet been reached.</p>  
+                        <a href="http://www.columbiaspectator.com/2013/01/16/students-faculty-house-employees-continue-negotiate-contracts-labor-administrators">
+                        <img src="images/work_samples/sws.png">
+                        </a>
+                </div>                                    
+        </div>
+</div>
+<script>
+        var sandy = $("#sandy").detach();
+        var poverty = $("#poverty").detach();
+        // Set height to window size always     
+        $(window).resize(function (){
+                $("body").css("height", $(window).height() + "px");
+        });
+        $(window).load(function () {
+                $("body").css("height", $(window).height() + "px");
+                $('a').click(function() {
+                        $('a').removeClass('clicked');
+                        $(this).toggleClass('clicked');
+                });
+                $(document).click("#wgbh", function(){
+                console.log("clicked");
+
+                });
+                $(document).click("#spec", function(){
+                console.log("clicked");
+
+                });
+                $(document).click("#nydn", function(){ 
+                console.log("clicked");
+                });           
+        });
+       $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+            $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 1000, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+                         
+        
+</script>
+
+</body>

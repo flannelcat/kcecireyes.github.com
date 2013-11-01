@@ -8,8 +8,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
 
-	<script type="text/javascript" src='skrollr.min.js'></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!--<script type="text/javascript" src='skrollr.min.js'></script>-->
+	<script type="text/javascript" src="jquery.min.js"></script>
 	<title>Cecilia Reyes</title>
 </head>
 
@@ -26,22 +26,16 @@
 			<h1>f</h1></div> 
 	</a>
 	<div id="arrow"></div>
-		<!-- End of contact -->	
-		<div class="lol"></div>
-
-		<div id="skrollr-body">
-			<div id="preloader"></div>
-
-			<div class="navigation" data-0="height:100%;" data-500="height:0%;">
+			<div>
 					<!-- Navigation -->
 					<ul id="navbar">
-						<a href="#Me" target="_self" tabindex="1">
+						<a href="/about.html" target="_self" tabindex="1">
 							<li id="about">About me</li> 
 						</a>
 						<a href="images/resume.pdf" target="_self" tabindex="2">
 							<li id="resume">Resume</li>
 						</a>
-						<a href="#WorkSamples" target="_self" tabindex="3">
+						<a href="/work.html" target="_self" tabindex="3">
 							<li id="work">Work</li>
 						</a>
 					</ul>
@@ -50,9 +44,9 @@
 					<a href="index.html">
 						<img id="logo" src="images/logo.png" alt="Cecilia Reyes" width="830px" height="397px"/>
 					</a> 	
-				</div>
+			</div>
 
-				<div id="Me" class="centered" data-700="height:0%;" data-1300="height:100%;" data-2300="height:0%;">
+				<!-- <div id="Me" class="centered" data-700="height:0%;" data-1300="height:100%;" data-2300="height:0%;">
 					<p> I write code and stories, eat large quantities of chocolate and enjoy a good gif. </p>
 					<p> This is what I look like. </p>					
 					<img src="images/about.png"/>
@@ -76,25 +70,19 @@
 					<p>You have scrolled through it all!</p>
 					<p> Here's one of my favorite images for your trouble </p>
 					<img src="images/Mmm.jpg">					
-				</div>
-			</div>
-
+				</div> -->
+			<!-- </div>
+ -->
 	<script type="text/javascript">
 
 		// Set height to window size always	
 		$(window).resize(function (){
-			$("#pageWrapper").css("height", $(window).height() + "px");
+			$("body").css("height", $(window).height() + "px");
 		});
 		$(window).load(function () {
-			$("#pageWrapper").css("height", $(window).height() + "px");
+			$("body").css("height", $(window).height() + "px");
 		});
-
-	 window.onload = function() {
-		document.getElementById("preloader").style.display = 'none';
-		skrollr.init({
-		// forceHeight: false
-	});
-	}
+		
 	</script>
 	<noscript>
 		<h3>This site requires JavaScript</h3>
