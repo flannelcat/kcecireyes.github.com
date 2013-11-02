@@ -101,19 +101,8 @@ p{
 #logo{
 	max-width: 100%;
 	min-height: 30%;
-	/*z-index: 10;
-	margin-right: auto;
-	margin-left: auto;*/
 	left: 10%;
-	/*display: block;*/
 	position:fixed;
     bottom: 0px;
-    /*clear: both;*/
-	/*border: 1px solid red;*/
 }	
-#skrollr-body {width:100%; height:100%; position:fixed; }
-#skrollr-body  div {overflow:hidden; position:absolute; }
 .centered { top:-400px; bottom:0; left:0; right:0; margin:auto; }	
-.navigation { top:0; bottom:0; left:0; right:0; margin:auto; }	
-
-
