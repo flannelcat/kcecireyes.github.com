@@ -79,7 +79,16 @@ body{
 	border-bottom: 3px solid #9370DB;
 	border-right: 0;
 }
+#draw:hover,
+#draw.clicked{
+	border-bottom: 3px solid #9370DB;
+	border-right: 0;
+}
 
+.drawing{
+	width: 20%;
+	height: 30%;
+}
 /*
 Small sized screen media
 */
