@@ -6,7 +6,7 @@ html,.wrapper{
 	width: 100%;
 	overflow: auto;
 }
-img{ border: 1px solid #ccc; /*width: 100%;*/ }
+img{ border: 1px solid #ccc; margin-bottom: 3%; }
 
 a{ text-decoration: none; }
 
@@ -18,7 +18,7 @@ h1{
 	margin-left: 5%;
 	margin-bottom: 1%;
 }
-p{	margin-bottom: 5%; }
+p{	margin-bottom: 2%; }
 
 body{
 	border: 5px solid #9370DB;
