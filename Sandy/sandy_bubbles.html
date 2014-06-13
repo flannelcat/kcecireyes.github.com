@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js"></script>    
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main_style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Sandy Anniversary</title>
+</head>
+<body>
+	<div id="container" class="container">
+		<header style:>
+			<h1>INSIDE THE FLOOD ZONE</h1>
+		</header>
+		<div id="main" role="main">
+			<div id="view_selection" class="btn-group">
+				<a href="#" id="all" class="clicked">Total</a>
+				<a href="#" id="borough" class="btn">Borough</a>
+				<a href="#" id="race" class="btn">Race</a>
+				<a href="#" id="income" class="btn">Income</a>
+				<a href="#" id="age" class="btn">Age</a>
+				<a href="#" id="disability" class="btn">Disability</a>
+			</div>
+			<div id="vis">
+				<div id="about">
+					<small><strong>About this graphic: </strong> Each bubble represents roughly 2,000 people. Data for this visualization was based on the New York City Community Development Block Grant - Disaster Recovery Partial Action Plan A, which drew on FEMA data to identify the Hurricane Sandy Operational Inundation Area. The report cited 2010 Census data and the 2009 - 2011 American Community Survey (ASC) data for demographic trends. <br>
+					<i>By: Cecilia Reyes</i></small>	
+				</div>			
+			</div>
+		</div>
+	</div> <!--! end of #container -->
+</body>
+
+<script type="text/javascript">
+	d3.csv("sandy_data.csv", function(data) {
+		custom_bubble_chart.init(data);
+		custom_bubble_chart.toggle_view('all');
+	});
+
+	jQuery(document).ready(function() {
+		jQuery('#view_selection a').click(function() {
+			var view_type = jQuery(this).attr('id');
+			jQuery('#view_selection a').removeClass('clicked');
+			jQuery(this).toggleClass('clicked');
+			custom_bubble_chart.toggle_view(view_type);
+			return false;
+		});
+	});
+</script>
+</html>
