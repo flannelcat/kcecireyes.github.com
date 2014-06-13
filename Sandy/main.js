@@ -1,6 +1,6 @@
 var custom_bubble_chart = (function(d3) {
 	var width = 635,
-	height = 720,
+	height = 800,
 	layout_gravity = -0.01,
 	damper = 0.1,
 	nodes = [],
