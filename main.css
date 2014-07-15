@@ -3,104 +3,71 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato';
-	overflow: auto; 
+	overflow: auto;
+	background-color: #C7C5BF;
 }
-body {
-	border: 5px solid #9370DB;
-	min-height: 100%;
-	height:100%; 
+
+a{
+	text-decoration: none;
+	color: #C7C5BF;
+	-o-transition:color .4s ease-out, background 1s ease-in;
+	-ms-transition:color .4s ease-out, background 1s ease-in;
+	-moz-transition:color .4s ease-out, background 1s ease-in;
+	-webkit-transition:color .4s ease-out, background 1s ease-in;
+	transition:color .4s ease-out, background 1s ease-in;
 }
-a{	text-decoration: none; outline: 0;}
-h1{
-	color: white;
+a:hover{
+	color: #EDECE6;
+	border-bottom: 2px solid #C7C5BF; 
 }
-p{
-	margin: 10px;
+li{
+	display: inline-block;
+	margin: 1em 1em;
+	font-size: 200%;
 }
-#big{
-	width: 550px;
-	height: 620px;
-}
-#face{
-	width: 280px;
-	height: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	top:10%;
-}
-.circle{
-	display: block;
-	border-radius: 50%;
-	height: 40px; 
-	width: 40px;
-	position: relative;	
-	background-color: #BA55D3;
-	text-align: center;
-	line-height: 0;
-	font-size: 100%;
-	font-family: Helvetica;
-	float: right;
-	margin-left: 0.2em;
-	margin-bottom: 10px;
-}
-.circle:hover{
-	opacity: 0.7;
-}
-.lol{
-	width: 100%;
-	height: 200px;
-}
-#navbar{
-	list-style-type: none;
-	margin: 0 auto;
-	width: 50%;
-}			
-#navbar li{
-	font-size: 230%;
-	text-align: center;
-	color: #8A2BE2;
-	font-family: 'Lato';
-	/*	width: 80%;*/
-}
-#about:hover{
-	opacity: 0.7;
-}
-#resume:hover{
-	opacity: 0.7;
-}
-#work:hover{
-	opacity: 0.7;
-}
-#arrow{
-	width: 100px;
-	background: #FFFFFF;
-	padding: 4px;
-	position: relative;
-	left: 51%;
-	z-index: -10;
-	opacity: 0.7;
-	top: 15%;
-}
-#arrow:after {
-	content: '';
-	display: block;
+#nav{
 	position: absolute;
-	top: 30%;
-	right: 25%;
-	width: 120px;
-	height: 120px; 
-	background: #FFFFFF;
-	border-left: 4px solid #C0C0C0;
-	border-bottom: 4px solid #C0C0C0;
-	-moz-transform:rotate(-45deg);
-	-webkit-transform:rotate(-45deg);
+	width: 100%;
+	height: 20%;
+	background-color: black;
 }
-#logo{
-	max-width: 100%;
-	min-height: 30%;
-	left: 10%;
-	position:fixed;
-    bottom: 0px;
-}	
-.centered { top:-400px; bottom:0; left:0; right:0; margin:auto; }	
+#bio{
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	cursor: pointer; cursor: hand;
+}
+#headshot{
+	z-index: 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 15%;
+	width: 60%;
+	height: 85%;
+	background-image: url("images/headshot.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: visible;
+}
+@media screen and (max-width: 510px) {
+	#nav{
+		position: absolute;
+		width: 100%;
+		height: 35%;
+		min-height: 35%;
+		background-color: black;
+	}
+	#bio{
+		top: 38%;
+		width: 100%;
+		left: 0;
+	}
+	#headshot{
+		top: 67%;
+	}
+	li{
+		margin: 0.4em 0;
+		display: block;
+	}
+}

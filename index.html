@@ -4,11 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="Cecilia Reyes - Columbia University student. About me, resume, portfolio" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<title> Cecilia Reyes</title>
 </head>
@@ -23,43 +25,42 @@
 
 </script>
 <body>
-	<!-- Contact -->
-	<a target="_blank" href="http://www.twitter.com/kcecireyes">
-		<div class="circle" id="twitter_icon"><h1>t</h1></div> 
-	</a>	
-	<a target="_blank" href="http://www.linkedin.com/in/kceciliareyes/">
-		<div class="circle" id="linkedin_icon"><h1>l</h1></div>
-	</a>
-	<a target="_blank" href="https://www.facebook.com/k.cecilia.reyes?ref=tn_tnmn">
-		<div class="circle" id="fb_icon">
-			<h1>f</h1></div> 
-	</a>
-	<div id="arrow"></div>
-			<div>
-					<!-- Navigation -->
-					<ul id="navbar">
-						<a href="images/resume.pdf" target="_self" tabindex="2">
-							<li id="resume">Resume</li>
-						</a>
-						<a href="/work.html" target="_self" tabindex="3">
-							<li id="work">Work</li>
-						</a>
-					</ul>
-					<!-- End of Navigation --> 
-					
-					<a href="index.html">
-						<img id="logo" src="images/logo.png" alt="Cecilia Reyes" width="830px" height="397px"/>
-					</a> 	
-			</div>
-	<script type="text/javascript">
+	<div id="nav">
+		<ul>
+			<li><a href="#"> About </a></li>
+			<li><a href="images/resume.pdf" target="_blank"> Resume </a></li>
+			<li><a href="/work.html" target="_self"> Work </a></li>
+		</ul>
+	</div>
+	<div id="headshot"></div>
+	<div id="bio">
+		<h1>Hello! I'm Cecilia</h1>
+		<p>and</p>
+		<h3> I <span id="description"> like to code ...</span></h3>
+	</div>
 
-		// Set height to window size always	
+	<script type="text/javascript">
+		// Set height to window size always
 		$(window).resize(function (){
 			$("body").css("height", $(window).height() + "px");
 		});
 		$(window).load(function () {
 			$("body").css("height", $(window).height() + "px");
 		});
+
+		$("#bio").click(function(){
+			if (!$("span").contents())
+				description_change();
+			$("span").contents().remove();
+			description_change();
+		});
+
+		function description_change() {
+			var iam = ["write stories", "major in Artificial Intelligence", "read fiction", "like figure drawing", "eat too much chocolate", "study at Columbia University", "was born in Mexico City", "like questions more than answers", "make decent chiles rellenos", "play board games", "take (bad but numerous) pictures", "walk places", "like to make things"];
+			random = Math.round(Math.random() * 11) + 1;
+			console.log(random);
+			$("span").append(iam[random]);
+		}
 		
 	</script>
 	<noscript>
