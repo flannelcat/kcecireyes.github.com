@@ -6,8 +6,7 @@ body, html {
 	overflow: auto;
 	background-color: #C7C5BF;
 }
-
-a{
+li a{
 	text-decoration: none;
 	color: #C7C5BF;
 	-o-transition:color .4s ease-out, background 1s ease-in;
@@ -16,15 +15,56 @@ a{
 	-webkit-transition:color .4s ease-out, background 1s ease-in;
 	transition:color .4s ease-out, background 1s ease-in;
 }
-a:hover{
+li a:hover{
 	color: #EDECE6;
-	border-bottom: 2px solid #C7C5BF; 
 }
 li{
 	display: inline-block;
 	margin: 1em 1em;
 	font-size: 200%;
 }
+
+#bio a{
+	text-decoration: none;
+	color: #F2F1E9;
+	font-size: 150%;
+}
+#bio a::before,
+#bio a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+#bio a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+#bio a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+#bio a:hover::before,
+#bio a:hover::after,
+#bio a:focus::before,
+#bio a:focus::after {
+	opacity: 1;
+	/*text-shadow: 1px 1px black;*/
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
 #nav{
 	position: absolute;
 	width: 100%;
@@ -35,7 +75,6 @@ li{
 	position: absolute;
 	top: 50%;
 	left: 60%;
-	cursor: pointer; cursor: hand;
 }
 #headshot{
 	z-index: 0;
@@ -50,7 +89,15 @@ li{
 	background-size: contain;
 	overflow: visible;
 }
-@media screen and (max-width: 510px) {
+
+@media screen and (max-width: 770px) {
+	#bio{
+		top: 35%;
+		width: 100%;
+		left: 28%;
+	}
+
+@media screen and (max-width: 520px) {
 	#nav{
 		position: absolute;
 		width: 100%;

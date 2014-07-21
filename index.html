@@ -36,7 +36,7 @@
 	<div id="bio">
 		<h1>Hello! I'm Cecilia</h1>
 		<p>and</p>
-		<h3> I <span id="description"> like to code ...</span></h3>
+		<a id="description" href="#"> I like to code ...</a>
 	</div>
 
 	<script type="text/javascript">
@@ -49,9 +49,9 @@
 		});
 
 		$("#bio").click(function(){
-			if (!$("span").contents())
+			if (!$("#description").contents())
 				description_change();
-			$("span").contents().remove();
+			$("#description").contents().remove();
 			description_change();
 		});
 
@@ -59,7 +59,7 @@
 			var iam = ["write stories", "major in Artificial Intelligence", "read fiction", "like figure drawing", "eat too much chocolate", "study at Columbia University", "was born in Mexico City", "like questions more than answers", "make decent chiles rellenos", "play board games", "take (bad but numerous) pictures", "walk places", "like to make things"];
 			random = Math.round(Math.random() * 11) + 1;
 			console.log(random);
-			$("span").append(iam[random]);
+			$("#description").html("I " + iam[random]);
 		}
 		
 	</script>
