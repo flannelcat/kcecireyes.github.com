@@ -27,16 +27,20 @@
 <body>
 	<div id="nav">
 		<ul>
-			<li><a href="#"> About </a></li>
 			<li><a href="images/resume.pdf" target="_blank"> Resume </a></li>
 			<li><a href="/work.html" target="_self"> Work </a></li>
+			<li><a href="mailto:kceciliareyes@gmail.com?Subject=Hello%20from%20the%20Internet" target="_blank"> Write me? </a></li>
 		</ul>
 	</div>
 	<div id="headshot"></div>
-	<div id="bio">
-		<h1>Hello! I'm Cecilia</h1>
-		<p>and</p>
-		<a id="description" href="#"> I like to code ...</a>
+	<div id="description">
+		<div id="bio">
+			<div id="hello">
+				<h1>Hello! I'm Cecilia</h1>
+				<p>and</p>
+			</div>
+			<p><a id="des_text" href="#"> I like code, words, things ...</a></p>
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -48,20 +52,27 @@
 			$("body").css("height", $(window).height() + "px");
 		});
 
-		$("#bio").click(function(){
-			if (!$("#description").contents())
+		$("#description").click(function(){
+			if (!$("#des_text").contents())
 				description_change();
-			$("#description").contents().remove();
+			$("#des_text").contents().remove();
 			description_change();
 		});
 
 		function description_change() {
-			var iam = ["write stories", "major in Artificial Intelligence", "read fiction", "like figure drawing", "eat too much chocolate", "study at Columbia University", "was born in Mexico City", "like questions more than answers", "make decent chiles rellenos", "play board games", "take (bad but numerous) pictures", "walk places", "like to make things"];
-			random = Math.round(Math.random() * 11) + 1;
+			var iam = ["write stories", "focus on Artificial Intelligence", "like drawing hands and feet", "eat too much chocolate", "am a senior at Columbia University", "was born and raised in Mexico City", "like asking questions", "make decent chiles rellenos", "think people are the interesting-est", "take too many pictures", "enjoy taking long walks", "am curious about most things"];
+			random = Math.round(Math.random() * 10) + 1;
 			console.log(random);
-			$("#description").html("I " + iam[random]);
+			text = iam[random];
+			if (text.length > 23) {
+				$("#des_text").css("margin-left", "-2.4em");
+				$("#des_text").html("I " + text);
+			}
+			else{
+				$("#des_text").css("margin-left", "-1em");
+				$("#des_text").html("I " + text);
+			}
 		}
-		
 	</script>
 	<noscript>
 		<h3>This site requires JavaScript</h3>

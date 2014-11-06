@@ -24,13 +24,27 @@ li{
 	font-size: 200%;
 }
 
-#bio a{
+#description{
+	height: 100%;
+	float: right;
+}
+
+#hello{
+	position: fixed;
+}
+
+#description a{
+	margin-left: -1.5em;
+	top: 4em;
+	float: left;
 	text-decoration: none;
 	color: #F2F1E9;
-	font-size: 150%;
+	font-size: 170%;
+	position: relative;
 }
-#bio a::before,
-#bio a::after {
+
+#description a::before,
+#description a::after {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -38,7 +52,7 @@ li{
 	transition: transform 0.3s, opacity 0.2s;
 }
 
-#bio a::before {
+#description a::before {
 	margin-right: 10px;
 	content: '[';
 	-webkit-transform: translateX(20px);
@@ -46,7 +60,7 @@ li{
 	transform: translateX(20px);
 }
 
-#bio a::after {
+#description a::after {
 	margin-left: 10px;
 	content: ']';
 	-webkit-transform: translateX(-20px);
@@ -54,12 +68,11 @@ li{
 	transform: translateX(-20px);
 }
 
-#bio a:hover::before,
-#bio a:hover::after,
-#bio a:focus::before,
-#bio a:focus::after {
+#description a:hover::before,
+#description a:hover::after,
+#description a:focus::before,
+#description a:focus::after {
 	opacity: 1;
-	/*text-shadow: 1px 1px black;*/
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
@@ -90,13 +103,11 @@ li{
 	overflow: visible;
 }
 
-@media screen and (max-width: 770px) {
-	#bio{
+@media screen and (max-width: 700px) {
+	#headshot{
 		top: 35%;
-		width: 100%;
-		left: 28%;
 	}
-
+}
 @media screen and (max-width: 520px) {
 	#nav{
 		position: absolute;
@@ -108,10 +119,10 @@ li{
 	#bio{
 		top: 38%;
 		width: 100%;
-		left: 0;
+		left: 15%;
 	}
 	#headshot{
-		top: 67%;
+		top: 60%;
 	}
 	li{
 		margin: 0.4em 0;
