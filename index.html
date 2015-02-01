@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -25,54 +24,46 @@
 
 </script>
 <body>
-	<div id="nav">
-		<ul>
-			<li><a href="images/resume.pdf" target="_blank"> Resume </a></li>
-			<li><a href="/work.html" target="_self"> Work </a></li>
-			<li><a href="mailto:kceciliareyes@gmail.com?Subject=Hello%20from%20the%20Internet" target="_blank"> Write me? </a></li>
-		</ul>
-	</div>
-	<div id="headshot"></div>
-	<div id="description">
-		<div id="bio">
-			<div id="hello">
-				<h1>Hello! I'm Cecilia</h1>
-				<p>and</p>
-			</div>
+	<div id="bio">
+		<p id="hello">Hello!</p>
+		<div id="headshot"></div>
+		<p>My name is Cecilia Reyes</p>
+		<div id="description">
 			<p><a id="des_text" href="#"> I like code, words, things ...</a></p>
 		</div>
+		<p> I'm a senior at <a href="http://www.college.columbia.edu/">Columbia University</a>, studying computer science and regretting not taking creative writing workshops sooner. I was the president of <a href="https://www.facebook.com/CuArtistSociety">Artist Society</a> for two years (a member always). Ask me about it, I really enjoyed it. </p>
+		<p> I'm interested in the intersection of CS and storytelling, particularly Natural Language Processing and investigative journalism.</p>
+		<p>I've worked at the New York Daily News and the Boston Globe. Play around with some of my <a href="/work.html" target="_self">work</a> or look at my <a href="images/resume.pdf" target="_blank"> resume</a>.</p>
+		<p>Also, I think "stalking" gets a bad rep, go ahead and <a href="mailto:kceciliareyes@gmail.com?Subject=Hello%20from%20the%20Internet" target="_blank"> drop me a line.</a></p>
 	</div>
 
-	<script type="text/javascript">
-		// Set height to window size always
-		$(window).resize(function (){
-			$("body").css("height", $(window).height() + "px");
-		});
-		$(window).load(function () {
-			$("body").css("height", $(window).height() + "px");
-		});
 
-		$("#description").click(function(){
-			if (!$("#des_text").contents())
+	<script type="text/javascript">
+
+		function init() {
+			onDescription();
+			changeText();
+		}
+
+		function onDescription() {
+			$("#description").click(function(){
+				if (!$("#des_text").contents())
+					description_change();
+				$("#des_text").contents().remove();
 				description_change();
-			$("#des_text").contents().remove();
-			description_change();
-		});
+			});
+		}
 
 		function description_change() {
-			var iam = ["write stories", "focus on Artificial Intelligence", "like drawing hands and feet", "eat too much chocolate", "am a senior at Columbia University", "was born and raised in Mexico City", "like asking questions", "make decent chiles rellenos", "think people are the interesting-est", "take too many pictures", "enjoy taking long walks", "am curious about most things"];
+			var iam = 
+			["write short stories", "like drawing hands and feet", "eat too much chocolate", "was born and raised in Mexico City", "like asking questions", "will name my first dog Jamon", "make decent chiles rellenos", "think people are interesting", "take too many pictures", "enjoy taking long walks", "am curious about most things", "like board games"];
 			random = Math.round(Math.random() * 10) + 1;
 			console.log(random);
 			text = iam[random];
-			if (text.length > 23) {
-				$("#des_text").css("margin-left", "-2.4em");
-				$("#des_text").html("I " + text);
-			}
-			else{
-				$("#des_text").css("margin-left", "-1em");
-				$("#des_text").html("I " + text);
-			}
+			$("#des_text").html("I " + text);
 		}
+
+		init();
 	</script>
 	<noscript>
 		<h3>This site requires JavaScript</h3>
