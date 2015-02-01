@@ -27,14 +27,14 @@
 	<div id="bio">
 		<p id="hello">Hello!</p>
 		<div id="headshot"></div>
-		<p>My name is Cecilia Reyes</p>
+		<p>My name is Cecilia Reyes.</p>
 		<div id="description">
 			<p><a id="des_text" href="#"> I like code, words, things ...</a></p>
 		</div>
-		<p> I'm a senior at <a href="http://www.college.columbia.edu/">Columbia University</a>, studying computer science and regretting not taking creative writing workshops sooner. I was the president of <a href="https://www.facebook.com/CuArtistSociety">Artist Society</a> for two years (a member always). Ask me about it, I really enjoyed it. </p>
+		<p> I'm a senior at <a href="http://www.college.columbia.edu/" target="_blank">Columbia University</a>, studying computer science and regretting not taking creative writing workshops sooner. I was the president of <a href="https://www.facebook.com/CuArtistSociety" target="_blank">Artist Society</a> for two years (a member always). Ask me about it, I really enjoyed it. </p>
 		<p> I'm interested in the intersection of CS and storytelling, particularly Natural Language Processing and investigative journalism.</p>
-		<p>I've worked at the New York Daily News and the Boston Globe. Play around with some of my <a href="/work.html" target="_self">work</a> or look at my <a href="images/resume.pdf" target="_blank"> resume</a>.</p>
-		<p>Also, I think "stalking" gets a bad rep, go ahead and <a href="mailto:kceciliareyes@gmail.com?Subject=Hello%20from%20the%20Internet" target="_blank"> drop me a line.</a></p>
+		<p>I've worked at the Boston Globe and the New York Daily News. Play around with some of my <a href="/work.html" target="_self">work</a> or look at my <a href="images/resume.pdf" target="_blank"> resume</a>.</p>
+		<p>Also, I think "stalking" gets a bad rep, so go ahead and <a href="mailto:kceciliareyes@gmail.com?Subject=Hello%20from%20the%20Internet" target="_blank"> drop me a line.</a></p>
 	</div>
 
 
@@ -42,7 +42,6 @@
 
 		function init() {
 			onDescription();
-			changeText();
 		}
 
 		function onDescription() {
@@ -60,7 +59,7 @@
 			random = Math.round(Math.random() * 10) + 1;
 			console.log(random);
 			text = iam[random];
-			$("#des_text").html("I " + text);
+			$("#des_text").html("I " + text + ".");
 		}
 
 		init();

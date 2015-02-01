@@ -25,12 +25,8 @@ body, html {
 	box-sizing: border-box;
 	color: #666;
 }
-#hello{
-	font-size: 140%;
-}
 #bio a{
 	text-decoration: none;
-	/*color: #8B0000;*/
 	color: #DC143C;
 }
 #description{
@@ -69,5 +65,4 @@ body, html {
 		-webkit-border-radius: 150px;
 		-moz-border-radius: 150px;
 	}
-
 }
