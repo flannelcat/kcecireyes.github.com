@@ -4,9 +4,14 @@
     <title>Work</title>
     <link rel="stylesheet" href="work.css">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <!--<script type="text/template" class="template" src="worksample.template">-->
 </head>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,218 +23,43 @@
 
 </script>
 <body>
-    <div id="nav">
-          <div><a href="#" id="globe" class="button clicked"> The Boston Globe </a></div>
-          <div><a href="#" id="nydn" class="button"> NYDaily News </a></div>
-          <div><a href="#" id="spec" class="button"> Spectator </a></div>
-          <div><a href="#" id="drawings" class="button"> Others </a></div>
-    </div>
+<h1>Portfolio</h1>
     <div class="wrap">
-      <!-- Boston Globe -->
-      <div class="box globe">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.bostonglobe.com/metro/2014/07/19/just-luck-some-lottery-winners-cash-hundreds-tickets/u9slYhTdzofrnTGMmGF0jN/story.html">
-            <img src="images/work_samples/globe/brudnicks.png" />
-          </a>
-          <div class="titleBox">10 Percenters</div>
-        </div>
+      <div class="box" id="bg"><h2>Boston Globe</h2></div>
+      <div class="box" id="nydn"><h2>New York Daily News</h2>
+        <p> I apologize if some links aren't playing nice: I have no control over their deployment :( </p>
       </div>
-      <div class="box globe">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.bostonglobe.com/2014/07/14/what-team-did-massachusetts-root-for-during-world-cup-final/EypFKrpWFpLV4l7kvnvu8O/story.html">
-            <img src="images/work_samples/globe/worldcup.png" />
-          </a>
-          <div class="titleBox">Mass. by Descendance</div>
-        </div>
-      </div>
-      <div class="box globe">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.bostonglobe.com/2014/06/23/soccer/pf21frmdANwSDtGvBVhWVK/story.html">
-            <img src="images/work_samples/globe/wc_calculator.png" />
-          </a>
-          <div class="titleBox">Will the U.S. advance if...</div>
-        </div>
-      </div>
-      <div class="box globe">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.bostonglobe.com/2014/06/22/compare-prices-colleges-and-universities/383o9UzIKNeHHm5yODNuQO/story.html">
-            <img src="images/work_samples/globe/colleges.png" />
-          </a>
-          <div class="titleBox">Tuition Costs</div>
-        </div>
-      </div>
-      <div class="box globe">
-        <div class="boxInner">
-          <a target="_blank" target="_blank" href="http://www.bostonglobe.com/2014/06/05/poll-governor-election-candidates/rnLiEf8tFWjjaPFxXRvwRK/story.html">
-            <img src="images/work_samples/globe/favorability.png" />
-          </a>
-          <div class="titleBox">Mayor Race</div>
-        </div>
-      </div>
-      <!-- NYDN -->
-      <div class="box nydn">
-        <div class="boxInner">
-          <a target="_blank" href="https://github.com/kcecireyes/NewsQs">
-            <img src="images/work_samples/nydn/newsqs.png" />
-            </a>
-          <div class="titleBox">GEN NY 2014</div>
-        </div>
-      </div>
-      <div class="box nydn">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.nydailynews.com/new-york/map-reveals-google-autocomplete-new-york-city-article-1.1744115">
-            <img src="images/work_samples/nydn/google.png" />
-            </a>
-          <div class="titleBox">What Does Autocomplete Say...</div>
-        </div>
-      </div>
-      <div class="box nydn">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.nydailynews.com/new-york/hurricane-sandy/sandy-flood-zone-interactive-graphic-article-1.1499707">
-            <img src="images/work_samples/nydn/sandy.png" />
-            </a>
-          <div class="titleBox">Sandy Anniversary</div>
-        </div>
-      </div>
-      <div class="box nydn">
-        <div class="boxInner">
-          <a target="_blank" href="http://www.nydailynews.com/new-york/higher-income-areas-taxes-poorer-counterparts-article-1.1470735">
-            <img src="images/work_samples/nydn/property.png" />
-            </a>
-          <div class="titleBox">High Taxes For the Poor</div>
-        </div>
-      </div>
-      <!-- Columbia Spectator -->
-      <div class="box spec">
-        <div class="boxInner">
-          <a target="_blank" href="http://columbiaspectator.com/2013/02/22/1020-fined-underage-drinking-after-police-sting-could-lose-liquor-license">
-            <img src="images/work_samples/spec/1020.jpg" />
-            </a>
-          <div class="titleBox">1020 Police Sting</div>
-        </div>
-      </div>
-      <div class="box spec">
-        <div class="boxInner">
-          <a target="_blank" href="http://columbiaspectator.com/2013/03/05/nutella-ferris-booth-costs-dining-5000-week-part-due-dining-hall-thievery">
-            <img src="images/work_samples/spec/nutella.jpg" />
-            </a>
-          <div class="titleBox">Nutella Craze</div>
-        </div>
-      </div>
-      <div class="box spec">
-        <div class="boxInner">
-          <a target="_blank" href="http://columbiaspectator.com/news/2013/05/10/teachers-college-faculty-vote-not-support-proposed-2013-14-budget">
-            <img src="images/work_samples/spec/tc.jpg" />
-            </a>
-          <div class="titleBox">TC Faculty Against President</div>
-        </div>
-      </div>
-      <div class="box spec">
-        <div class="boxInner">
-          <a target="_blank" href="http://columbiaspectator.com/2013/01/16/students-faculty-house-employees-continue-negotiate-contracts-labor-administrators">
-            <img src="images/work_samples/spec/sws.jpg" />
-            </a>
-          <div class="titleBox">Faculty House negotiations</div>
-        </div>
-      </div>
-      <!-- Drawings -->
-      <div class="box drawings">
-        <div class="boxInner">
-          <a target="_blank" href="https://github.com/kcecireyes/JIT">
-            <img src="images/work_samples/drawings/jit.png" />
-            </a>
-          <div class="titleBox">Jit</div>
-        </div>
-      </div>
-      <div class="box drawings">
-        <div class="boxInner">
-          <a target="_blank" href="https://github.com/alexandraorth/GetWithTheTimes">
-            <img src="images/work_samples/drawings/gwtt.png" />
-            </a>
-          <div class="titleBox">Get With The Times</div>
-        </div>
-      </div>
-      <div class="box drawings">
-        <div class="boxInner">
-          <a target="_blank" href="images/work_samples/drawings/1.jpg">
-            <img src="images/work_samples/drawings/1.jpg" />
-            </a>
-          <div class="titleBox">Sketch 1</div>
-        </div>
-      </div>
-        <div class="box drawings">
-          <div class="boxInner">
-            <a target="_blank" href="images/work_samples/drawings/3.jpg">
-              <img src="images/work_samples/drawings/3.jpg" />
-            </a>
-            <div class="titleBox">Sketch 3</div>
-          </div>
-        </div>
-        <div class="box drawings">
-          <div class="boxInner">
-            <a target="_blank" href="images/work_samples/drawings/5.jpg">
-              <img src="images/work_samples/drawings/5.jpg" />
-            </a>
-            <div class="titleBox">Sketch 5</div>
-          </div>
-        </div>
-        <div class="box drawings">
-          <div class="boxInner">
-            <a target="_blank" href="images/work_samples/drawings/6.jpg">
-              <img src="images/work_samples/drawings/6.jpg" />
-            </a>
-            <div class="titleBox">Sketch 6</div>
-          </div>
-        </div>
-        <div class="box drawings">
-          <div class="boxInner">
-            <a target="_blank" href="images/work_samples/drawings/7.jpg">
-              <img src="images/work_samples/drawings/7.jpg" />
-            </a>
-            <div class="titleBox">Sketch 7</div>
-          </div>
-        </div>
-        <div class="box drawings">
-          <div class="boxInner">
-            <a target="_blank" href="images/work_samples/drawings/11.jpg">
-              <img src="images/work_samples/drawings/11.jpg" />
-            </a>
-            <div class="titleBox">Sketch 11</div>
-          </div>
-        </div>
-      </div>
-
-<a style="text-decoration: none;" href="/index.html"> Home </a>
-
+      <div class="box" id="spec"><h2>Columbia Spectator</h2></div>
+      <div class="box" id="projects"><h2>Projects</h2></div>
+      <div class="box" id="drawings"><h2>Drawings</h2></div>
+    </div>
+    <a style="text-decoration: none; text-align: center; display:block;" href="/index.html"> Homepage </a>
 </body>
 <script>
 
-function init() {
-  setEvents();
-  showWork();
-}
-
-function setEvents(){
-  $('#nav a').click(function() {
-    if ($(this).attr('class') === 'button clicked'){
-      $(this).removeClass('clicked');
+    function init() {
+      addworkSamples();
     }
-    else
-      $(this).addClass('clicked');
-    showWork();
-  });
-}
 
-function showWork() {
-  $('.box').hide();
-  var to_show = $('.clicked');
-  for (var i = 0; i < to_show.length; i++) {
-    var id = $(to_show[i]).attr('id');
-    $('.'+id).show();
-  };
-}
+    function addworkSamples(){
+      // console.log(data.length);
+      data.forEach(function(sample) {
+        console.log('hey');
+        var c = sample.class,
+        base = $("<div class='"+ c +" sample'></div>"),
+        link = $("<a href='"+sample.link+"' target='_blank'>"),
+        img = $("<div class='image'></div>");
+        img.css('background-image', 'url(' + sample.image + ')'),
+        span = $("<span class='text'><span>"+sample.title+"</span></span>");
 
-init();
+        var imgs = img.append(span),
+        link_img = link.append(imgs),
+        sampleHtml = base.append(link_img);
+        $('#'+c).append(sampleHtml);
+      })
+    }
+
+    init();
 
 </script>
 </html>
