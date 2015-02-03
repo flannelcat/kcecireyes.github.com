@@ -66,4 +66,10 @@ span.text span {
 		margin: 1em 0;
 		width: 85%;
 		height: 40%;
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		filter: grayscale(0);
 	}
+	div.image, div.image span.text{
+		opacity: 1.0;
+}
