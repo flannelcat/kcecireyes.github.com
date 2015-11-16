@@ -1,5 +1,23 @@
 data = 
 [{
+	"organization": "ProPublica",
+	"class": "pp",
+	"title": "Personal Explanations",
+	"link":"https://www.projects.propublica.org/explanations/",
+	"image": ""
+},{
+	"organization": "ProPublica",
+	"class": "pp",
+	"title": "Bonds",
+	"link":"",
+	"image": ""
+},{
+	"organization": "Boston Globe",
+	"class": "bg",
+	"title": "Faces of HS Football",
+	"link":"http://www.bostonglobe.com/2014/09/03/football/xXGFhl3CpPXRxl4uO2f0DN/story.html",
+	"image": "images/work_samples/globe/pickem.png"
+},{
 	"organization": "Boston Globe",
 	"class": "bg",
 	"title": "MFA Masterpieces on Loan",
@@ -98,13 +116,67 @@ data =
 },{
 	"organization": "Drawings",
 	"class":"drawings",
+	"title": "Sam and Justin's Wedding Invitation",
+	"link":"images/work_samples/drawings/wedding_front.png",
+	"image": "images/work_samples/drawings/wedding_front.png"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Postcard: Goodbye, Columbia",
+	"link":"images/work_samples/drawings/postcard.jpg",
+	"image": "images/work_samples/drawings/postcard.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Postcard: Tracey's Hair on Brighton",
+	"link":"images/work_samples/drawings/postcard_tracey.jpg",
+	"image": "images/work_samples/drawings/postcard_tracey.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Postcard: Adulthood for Alexandra",
+	"link":"images/work_samples/drawings/postcard_alex.jpg",
+	"image": "images/work_samples/drawings/postcard_alex.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Envelope for Andrew, collab",
+	"link":"images/work_samples/drawings/9.jpg",
+	"image": "images/work_samples/drawings/9.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Self-Loathing, watercolor",
+	"link":"images/work_samples/drawings/watercolor_1.jpg",
+	"image": "images/work_samples/drawings/watercolor_1.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Man Lying On His Side",
+	"link":"images/work_samples/drawings/2.jpg",
+	"image": "images/work_samples/drawings/2.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Older Man Lying Down",
+	"link":"images/work_samples/drawings/4.jpg",
+	"image": "images/work_samples/drawings/4.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
+	"title": "Older Man, Detail",
+	"link":"images/work_samples/drawings/8.jpg",
+	"image": "images/work_samples/drawings/8.jpg"
+},{
+	"organization": "Drawings",
+	"class":"drawings",
 	"title": "Study of Legs",
 	"link":"images/work_samples/drawings/1.jpg",
 	"image": "images/work_samples/drawings/1.jpg"
 },{
 	"organization": "Drawings",
 	"class":"drawings",
-	"title": "Study 2",
+	"title": "Study, Hand & Foot",
 	"link":"images/work_samples/drawings/3.jpg",
 	"image": "images/work_samples/drawings/3.jpg"
 },{
@@ -116,7 +188,7 @@ data =
 },{
 	"organization": "Drawings",
 	"class":"drawings",
-	"title": "Still life",
+	"title": "Still life on a Countertop",
 	"link":"images/work_samples/drawings/6.jpg",
 	"image": "images/work_samples/drawings/6.jpg"
 },{

@@ -23,13 +23,24 @@
 <body>
 <h1>Portfolio</h1>
     <div class="wrap">
-      <div class="box" id="bg"><h2>Boston Globe</h2></div>
-      <div class="box" id="nydn"><h2>New York Daily News</h2>
-        <p> I apologize if some links aren't playing nice: I have no control over their deployment :( </p>
+<!--       <div class="box" id="pp"><h2>ProPublica</h2>
+        <p>News apps and graphics in the public interest.</p>
+      </div> -->
+    <div class="box" id="bg"><h2>Boston Globe</h2>
+        <p>I spent a summer working in the agile & creative 2013 two-person News Dev team.</p>
       </div>
-      <div class="box" id="spec"><h2>Columbia Spectator</h2></div>
-      <div class="box" id="projects"><h2>Projects</h2></div>
-      <div class="box" id="drawings"><h2>Drawings</h2></div>
+      <div class="box" id="nydn"><h2>New York Daily News</h2>
+        <p> For a year, I was the only news developer at the NYDN, there as an intern. </p>
+        <p>Apologies if some links aren't playing nice: I have no control over their deployment :( </p>
+      </div>
+      <div class="box" id="spec"><h2>Columbia Spectator</h2>
+        <p>I covered the administation as a news deputy, and churned out a fair bit of writing:</p>
+        <p>The first two stories are investigations, one conducted over a semester, and the rest are interesting one-offs.</p>
+      </div>
+      <!-- <div class="box" id="projects"><h2>Projects</h2></div> -->
+      <div class="box" id="drawings"><h2>Handmade Things</h2>
+        <p>Sometimes code and words can't express things.</p>
+      </div>
     </div>
     <a style="text-decoration: none; text-align: center; display:block;" href="/index.html"> Homepage </a>
 </body>
@@ -40,20 +51,15 @@
     }
 
     function addworkSamples(){
-      // console.log(data.length);
       data.forEach(function(sample) {
-        console.log('hey');
         var c = sample.class,
-        base = $("<div class='"+ c +" sample'></div>"),
+        base = $("<div class='"+ c +" sample'></div>");
+        base.css('background-image', 'url(' + sample.image + ')'),
         link = $("<a href='"+sample.link+"' target='_blank'>"),
-        img = $("<div class='image'></div>");
-        img.css('background-image', 'url(' + sample.image + ')'),
-        span = $("<span class='text'><span>"+sample.title+"</span></span>");
+        text = $("<div class='text'><span>"+sample.title+"</span></div>");
 
-        var imgs = img.append(span),
-        link_img = link.append(imgs),
-        sampleHtml = base.append(link_img);
-        $('#'+c).append(sampleHtml);
+        var imgs = base.append(link).append(text);
+        $('#'+c).append(imgs);
       })
     }
 

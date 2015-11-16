@@ -25,7 +25,7 @@ body, html {
 	box-sizing: border-box;
 	color: #666;
 }
-#bio a{
+#bio span{
 	text-decoration: none;
 	color: #DC143C;
 }
@@ -34,14 +34,14 @@ body, html {
 	margin: 0 auto;
 	text-align: center;
 }
-#description a{
+#description span{
 	text-decoration: none;
 	color: #999;
 	font-size: 163%;
 	position: relative;
 
 }
-#description a:hover{
+#description span:hover{
 	 -webkit-transition: 1s ease;
 		transition: 1s ease;
 	text-decoration: underline;
