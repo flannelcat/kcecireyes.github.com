@@ -2,6 +2,7 @@ body, html {
 	text-align:center;
 	font-family: 'PT Sans', 'Lato';
 }
+a{ text-decoration: none;color: #DC143C;}
 #headshot{
 	position: relative;
 	margin: 0 auto;

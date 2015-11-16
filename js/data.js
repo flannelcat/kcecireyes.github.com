@@ -16,7 +16,7 @@ data =
 	"class": "bg",
 	"title": "Faces of HS Football",
 	"link":"http://www.bostonglobe.com/2014/09/03/football/xXGFhl3CpPXRxl4uO2f0DN/story.html",
-	"image": "images/work_samples/globe/pickem.png"
+	"image": "images/work_samples/globe/hsfootball1.png"
 },{
 	"organization": "Boston Globe",
 	"class": "bg",
