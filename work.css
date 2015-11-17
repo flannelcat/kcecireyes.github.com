@@ -22,14 +22,14 @@ p {
   width: 80%; }
 
 .box {
-  float: left;
+  text-align: center;
   width: 100%; }
   .box .sample {
     filter: gray;
+    display: inline-block;
     /* IE6-9 */
     -webkit-filter: grayscale(100%);
     overflow: hidden;
-    float: left;
     position: relative;
     margin: 1em;
     background-size: cover;
