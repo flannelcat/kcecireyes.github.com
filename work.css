@@ -21,30 +21,53 @@ p {
   margin: 0 auto;
   width: 90%; }
 
+.key {
+  overflow: hidden;
+  margin-bottom: 1em;
+  text-align: center; }
+  .key ul {
+    display: inline-block; }
+  .key li {
+    float: left;
+    font-style: 0.7em;
+    margin-right: 1.25em; }
+    .key li span {
+      display: inline-block;
+      width: 2em;
+      height: 4px;
+      margin-right: 0.25em; }
+  .key .fdev {
+    background: #999933; }
+  .key .bdev {
+    background: #663366; }
+  .key .writer {
+    background: #D4B16A; }
+  .key .design {
+    background: #666; }
+
 .box {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  /*colors*/ }
   .box .sample {
     display: inline-block;
-    filter: gray;
-    display: inline-block;
-    /* IE6-9 */
-    -webkit-filter: grayscale(100%);
     overflow: hidden;
     position: relative;
     margin: 1em;
     background-size: cover;
-    border: 9px solid gainsboro;
+    border: 4.5px solid gainsboro;
     border-radius: 50%;
     height: 250px;
     width: 250px;
     min-height: 100px;
-    min-width: 100px; }
-    .box .sample:hover {
-      filter: none;
-      -webkit-filter: grayscale(0%); }
-      .box .sample:hover .text {
-        display: block; }
+    min-width: 100px;
+    /*		-webkit-transform: rotate(45deg);
+    	    -moz-transform: rotate(45deg);
+    	    -o-transform: rotate(45deg);
+    	    -ms-transform: rotate(45deg);
+    	    transform: rotate(45deg);*/ }
+    .box .sample:hover .text {
+      display: block; }
     .box .sample .text {
       display: none;
       width: 100%;
@@ -59,6 +82,29 @@ p {
         width: 60%;
         text-align: center;
         display: inline-block; }
+  .box .fdev {
+    border-color: #999933; }
+  .box .bdev {
+    border-color: #663366; }
+  .box .design {
+    border-color: #666; }
+  .box .writer {
+    border-color: #D4B16A; }
+  .box .fdev.bdev {
+    border-right-color: #999933;
+    border-top-color: #999933;
+    border-bottom-color: #663366;
+    border-left-color: #663366; }
+  .box .fdev.design {
+    border-right-color: #999933;
+    border-top-color: #999933;
+    border-bottom-color: #666;
+    border-left-color: #666; }
+  .box .fdev.design.writer {
+    border-right-color: #999933;
+    border-top-color: #666;
+    border-bottom-color: #D4B16A;
+    border-left-color: gainsboro; }
 
 .home {
   clear: both; }
@@ -86,10 +132,8 @@ img#imgbox {
     /*no more circle magic*/
     height: 180px;
     width: 250px;
-    border: 4px solid gainsboro;
-    /*dont do any animation shit*/
-    filter: none;
-    -webkit-filter: grayscale(0%); }
+    border-width: 2px solid;
+    /*dont do any animation shit*/ }
     .box .sample .text {
       display: block;
       padding: 5px 0;

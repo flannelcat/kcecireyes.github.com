@@ -25,6 +25,14 @@
 <!-- <h1>Portfolio</h1> -->
     <div class="wrap">
       <div class="home"><a style="text-decoration: none; text-align: center;" href="/index.html"> Home </a></div>
+      <div class="key">
+        <ul>
+          <li><span class="tag fdev"></span>Front-end</li>
+          <li><span class="tag bdev"></span>Back-end</li>
+          <li><span class="tag design"></span>Designer</li>
+          <li><span class="tag writer"></span>Writer</li>
+        </ul>
+      </div>
 <!--       <div class="box" id="pp"><h2>ProPublica</h2>
         <p>News apps and graphics in the public interest.</p>
       </div> -->
@@ -50,19 +58,20 @@
 
     function init() {
       // var carousel = enableLightbox();
-      addworkSamples(enableLightbox);
+      // addworkSamples(enableLightbox);
+      addworkSamples();
     }
 
-    function addworkSamples(func){
+    function addworkSamples(){
       data.forEach(function(sample) {
         var c = sample.class,
-        base = $("<a id='" + ((c=='drawings')? "show" : "") +"' href='"+sample.link+"' target='_blank' class='"+ c +" sample'></a>");
+        base = $("<a id='" + ((c=='drawings')? "show" : "") +"' href='"+sample.link+"' target='_blank' class='"+ c + " " + sample.role + " sample'></a>");
         base.css('background-image', 'url(' + sample.image + ')'),
         text = $("<div class='text'><span>"+sample.title+"</span></div>");
         var imgs = base.append(text);
         $('#'+c).append(imgs);
       });
-      func();
+      // func();
     }
 
     function enableLightbox() {
