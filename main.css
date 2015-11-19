@@ -48,7 +48,6 @@ a{ text-decoration: none;color: #DC143C;}
 	text-decoration: underline;
 	width: 30px;
 }
-
 @media screen and (max-width: 700px) {
 	#headshot{
 		width: 250px;

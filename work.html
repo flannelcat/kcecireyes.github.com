@@ -7,6 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/imagelightbox.min.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
 </head>
 
@@ -48,22 +49,34 @@
 <script>
 
     function init() {
-      addworkSamples();
+      // var carousel = enableLightbox();
+      addworkSamples(enableLightbox);
     }
 
-    function addworkSamples(){
+    function addworkSamples(func){
       data.forEach(function(sample) {
         var c = sample.class,
-        base = $("<a href='"+sample.link+"' target='_blank' class='"+ c +" sample'></a>");
+        base = $("<a id='" + ((c=='drawings')? "show" : "") +"' href='"+sample.link+"' target='_blank' class='"+ c +" sample'></a>");
         base.css('background-image', 'url(' + sample.image + ')'),
-        // link = $("<a href='"+sample.link+"' target='_blank'>"),
         text = $("<div class='text'><span>"+sample.title+"</span></div>");
-
         var imgs = base.append(text);
         $('#'+c).append(imgs);
-      })
+      });
+      func();
     }
 
+    function enableLightbox() {
+      console.log('heyyy');
+      $('#show').imageLightbox(
+        {
+            selector:       'id="imgbox"',   // string;
+            allowedTypes:   'png|jpg|jpeg|gif',     // string;
+            animationSpeed: 250,                    // integer;
+            preloadNext:    true,                   // bool;            silently preload the next image
+            enableKeyboard: true,                   // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
+            quitOnDocClick: true,                   // bool;            quit when anything but the viewed image is clickeda
+        });
+    }
     init();
 
 </script>
