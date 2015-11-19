@@ -27,6 +27,7 @@ p {
   .box .sample {
     display: inline-block;
     filter: gray;
+    display: inline-block;
     /* IE6-9 */
     -webkit-filter: grayscale(100%);
     overflow: hidden;
