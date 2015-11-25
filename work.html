@@ -25,14 +25,14 @@
 <!-- <h1>Portfolio</h1> -->
     <div class="wrap">
       <div class="home"><a style="text-decoration: none; text-align: center;" href="/index.html"> Home </a></div>
-      <div class="key">
+<!--       <div class="key">
         <ul>
           <li><span class="tag fdev"></span>Front-end</li>
           <li><span class="tag bdev"></span>Back-end</li>
           <li><span class="tag design"></span>Designer</li>
           <li><span class="tag writer"></span>Writer</li>
         </ul>
-      </div>
+      </div> -->
 <!--       <div class="box" id="pp"><h2>ProPublica</h2>
         <p>News apps and graphics in the public interest.</p>
       </div> -->
@@ -45,7 +45,7 @@
       </div>
       <div class="box" id="spec"><h2>Columbia Spectator</h2>
         <p>I covered the administation as a news deputy, and churned out a fair bit of writing:</p>
-        <p>The first two stories are investigations, one conducted over a semester, and the rest are interesting one-offs.</p>
+        <p>The first two stories are investigations, one conducted over a semester. The rest were interesting one-offs.</p>
       </div>
       <!-- <div class="box" id="projects"><h2>Projects</h2></div> -->
       <div class="box" id="drawings"><h2>Handmade Things</h2>
@@ -65,13 +65,32 @@
     function addworkSamples(){
       data.forEach(function(sample) {
         var c = sample.class,
-        base = $("<a id='" + ((c=='drawings')? "show" : "") +"' href='"+sample.link+"' target='_blank' class='"+ c + " " + sample.role + " sample'></a>");
+        container = $('<div class="container"></div>'),
+        base = $("<a id='" + ((c=='drawings')? "show" : "") +"' href='"+sample.link+"' target='_blank' class='"+ c +" sample'></a>");
         base.css('background-image', 'url(' + sample.image + ')'),
         text = $("<div class='text'><span>"+sample.title+"</span></div>");
+
         var imgs = base.append(text);
-        $('#'+c).append(imgs);
+        container.append(imgs);
+        
+        container = appendRoles(sample, container);
+        $('#'+c).append(container);
       });
       // func();
+    }
+
+    function appendRoles(sample, container) {
+      if (sample.role){
+        var key = $('<div class="key"></div>'),
+        list = $('<ul></ul>');
+
+        (sample.role).forEach(function(r) {
+          var role = $('<li><span class="tag '+ r+'">' + map[r] + '</span></li>');
+          list.append(role);
+        });
+        container.append(key.append(list));
+      }
+      return container;
     }
 
     function enableLightbox() {
