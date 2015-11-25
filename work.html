@@ -25,14 +25,14 @@
 <!-- <h1>Portfolio</h1> -->
     <div class="wrap">
       <div class="home"><a style="text-decoration: none; text-align: center;" href="/index.html"> Home </a></div>
-<!--       <div class="key">
+      <div class="key">
         <ul>
           <li><span class="tag fdev"></span>Front-end</li>
           <li><span class="tag bdev"></span>Back-end</li>
           <li><span class="tag design"></span>Designer</li>
           <li><span class="tag writer"></span>Writer</li>
         </ul>
-      </div> -->
+      </div>
 <!--       <div class="box" id="pp"><h2>ProPublica</h2>
         <p>News apps and graphics in the public interest.</p>
       </div> -->
@@ -81,14 +81,17 @@
 
     function appendRoles(sample, container) {
       if (sample.role){
-        var key = $('<div class="key"></div>'),
-        list = $('<ul></ul>');
+        var key = $('<div class="key"></div>');
+        // list = $('<ul></ul>');
 
         (sample.role).forEach(function(r) {
-          var role = $('<li><span class="tag '+ r+'">' + map[r] + '</span></li>');
-          list.append(role);
+          // var role = $('<li><span class="tag '+ r+'">' + map[r] + '</span></li>');
+          var role = $('<div class="tag '+ r + '"></div>');
+          // list.append(role);
+          key.append(role);
         });
-        container.append(key.append(list));
+        // container.append(key.append(list));
+        container.append(key);
       }
       return container;
     }
