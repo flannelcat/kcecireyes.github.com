@@ -2,15 +2,17 @@ var data =
 [{
 	"organization": "ProPublica",
 	"class": "pp",
-	"title": "Personal Explanations",
+	"title": "News App: Personal Explanations",
+	"role": ["fdev","design","bdev"],
 	"link":"https://www.projects.propublica.org/explanations/",
-	"image": ""
+	"image": "images/work_samples/pp/explanations.png"
 },{
 	"organization": "ProPublica",
 	"class": "pp",
-	"title": "Bonds",
-	"link":"",
-	"image": ""
+	"title": "Pension Funding By State",
+	"role": ["fdev"],
+	"link":"https://projects.propublica.org/graphics/pension_bonds",
+	"image": "images/work_samples/pp/bonds.png"
 },{
 	"organization": "Boston Globe",
 	"class": "bg",
