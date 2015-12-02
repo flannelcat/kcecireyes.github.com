@@ -4,7 +4,7 @@ var data =
 	"class": "pp",
 	"title": "News App: Personal Explanations",
 	"role": ["fdev","design","bdev"],
-	"link":"https://www.projects.propublica.org/explanations/",
+	"link":"https://projects.propublica.org/explanations/",
 	"image": "images/work_samples/pp/explanations.png"
 },{
 	"organization": "ProPublica",
