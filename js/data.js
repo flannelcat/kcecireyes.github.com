@@ -2,6 +2,13 @@ var data =
 [{
 	"organization": "ProPublica",
 	"class": "pp",
+	"title": "100,000 NYC School Children Face Airport-Style Security Screening Every Day",
+	"role": ["writer"],
+	"link":"https://www.propublica.org/article/nyc-school-children-face-airport-style-security-screening-every-day",
+	"image": "images/work_samples/pp/detectors.png"
+},{
+	"organization": "ProPublica",
+	"class": "pp",
 	"title": "News App: Personal Explanations",
 	"role": ["fdev","design","bdev"],
 	"link":"https://www.projects.propublica.org/explanations/",
